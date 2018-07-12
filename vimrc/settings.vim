@@ -6,7 +6,9 @@ set autowrite                         " Automatically save before commands like 
 set backspace=indent,eol,start        " Backspace over everything.
 set cursorline                        " highlight cursor line
 set encoding=utf-8
-set expandtab
+set noexpandtab
+set softtabstop=0
+set clipboard=unnamedplus
 set foldlevel=20
 set foldmethod=syntax
 set formatoptions=1

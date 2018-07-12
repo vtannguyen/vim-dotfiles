@@ -15,6 +15,9 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Mapping shortcut to remove highlight
 map <Leader><Space> :nohl<CR>
 
+" Align text
+map <Leader>a :Tabularize /
+
 map gb :bnext<cr>
 map gB :bprev<cr>
 
