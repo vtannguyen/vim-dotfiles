@@ -64,6 +64,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 
 " snipMate
 Plugin 'garbas/vim-snipmate'
@@ -74,6 +75,10 @@ Plugin 'honza/vim-snippets'
 
 " vim-tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
+
+" fuzzy finder
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " Language support
 " Plugin 'tpope/vim-rails'
