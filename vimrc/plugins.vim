@@ -98,7 +98,7 @@ Plugin 'spf13/PIV'
 Plugin 'othree/html5.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'slim-template/vim-slim'
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 Plugin 'django.vim'
 
 Plugin 'guns/vim-clojure-static'
