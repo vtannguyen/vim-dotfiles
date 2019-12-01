@@ -2,11 +2,11 @@
 
 if has("gui_running")
 " GUI ================
-  "colors sienna
+  colors sienna
   "colors zenburn
   "colors lucius
-  colors jellybeans
-  " colors badwolf
+  "colors jellybeans
+	" colors badwolf
   set lines=70
   set columns=130
   " Remove scrollbars, toolbars, etc.
@@ -39,7 +39,12 @@ else
 
   "colors zenburn
   "colors lucius
-  colors jellybeans
+  "colors jellybeans
+  "colors sienna
+	colors smyck
+	"colors wombat256mod
+	"colors xoria256
+	"colors colorzone
 endif
 
 if exists('+colorcolumn')

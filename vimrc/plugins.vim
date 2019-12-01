@@ -114,8 +114,8 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'tpope/vim-classpath'
 
 " Colors
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'sjl/badwolf'
+" Plugin 'altercation/vim-colors-solarized'
+" Plugin 'sjl/badwolf'
 
 " Utilities, Dependencies
 Plugin 'L9'

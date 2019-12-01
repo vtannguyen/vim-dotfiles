@@ -23,6 +23,7 @@ let g:NERDTreeWinPos = 'right'
 map <Leader>n :NERDTreeFind<cr>
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeShowHidden = 1
+let NERDTreeWinSize = 50
 map <C-n> :NERDTreeToggle<CR>
 
 " Python-mode
