@@ -109,6 +109,8 @@ Plugin 'tpope/vim-fireplace'
 
 " Integrations
 Plugin 'tpope/vim-fugitive'
+Plugin 'https://github.com/airblade/vim-gitgutter.git'
+Plugin 'idanarye/vim-merginal'
 " Plugin 'mileszs/ack.vim'
 " Plugin 'majutsushi/tagbar'
 " Plugin 'tpope/vim-classpath'
