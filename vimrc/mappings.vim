@@ -60,14 +60,22 @@ nmap _ 5<C-w>-
 " Make it easier to paste in insert mode
 inoremap PPP <Esc>pa
 
-" Paste from clipboard easier
-nmap <F9> "+P
-imap <F9> "+P
+" Easier to copy and paste from clipboard easier
+noremap <Leader>Y "*y
+noremap <Leader>P "*p
+noremap <Leader>y "+y
+noremap <Leader>p "+p
 
 " While shifting indent, stay in visual mode
 vnoremap < <gv
 vnoremap > >gv
 vnoremap <Space> I<Space><Esc>gv
+
+" Map the Esc key
+inoremap kj <Esc>
+
+" esc in command mode
+cnoremap kj <C-C>
 
 " Undo and redo in insert mode
 inoremap <C-u> <C-o>u
