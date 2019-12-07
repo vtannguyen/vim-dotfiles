@@ -49,6 +49,6 @@ set visualbell
 set wildmenu
 set wildmode=list:longest,full        " bash-like command line tab completion
 set winheight=24
-set winwidth=94
+"set winwidth=94
 set wrap
 set wrapmargin=2

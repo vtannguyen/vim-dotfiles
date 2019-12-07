@@ -26,6 +26,7 @@ Plugin 'kien/ctrlp.vim'
 " -----------------------
 " File explorer within Vim
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Ultimate Vim statusline utility
 Plugin 'Lokaltog/vim-powerline'
 " Highlights the matching HTML tag

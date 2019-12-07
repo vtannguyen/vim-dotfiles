@@ -25,6 +25,21 @@ let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeShowHidden = 1
 let NERDTreeWinSize = 50
 map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "~",
+    \ "Staged"    : "+",
+    \ "Untracked" : "*",
+    \ "Renamed"   : "»",
+    \ "Unmerged"  : "=",
+    \ "Deleted"   : "-",
+    \ "Dirty"     : "×",
+    \ "Clean"     : "ø",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 
 " Python-mode
 let g:pymode_lint_write = 0
