@@ -44,7 +44,6 @@ Plugin 'vim-scripts/SearchComplete'
 " Simple plugin to view most recently used files
 " Plugin 'mru.vim'
 " Plugin 'bufexplorer.zip'
-" Plugin 'airblade/vim-gitgutter'
 " Adds visualizations for vim marks
 Plugin 'kshenoy/vim-signature'
 
@@ -77,33 +76,28 @@ Plugin 'honza/vim-snippets'
 " vim-tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
 
-" fuzzy finder
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-
 " Language support
 " Plugin 'tpope/vim-rails'
 " Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-haml'
+" Plugin 'tpope/vim-haml'
 Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
+" Plugin 'kchmck/vim-coffee-script'
 Plugin 'itspriddle/vim-jquery'
 Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-markdown'
-Plugin 'vimoutliner/vimoutliner'
-Plugin 'wannesm/wmgraphviz.vim'
-Plugin 'omlet.vim'
+" Plugin 'vimoutliner/vimoutliner'
+" Plugin 'wannesm/wmgraphviz.vim'
+" Plugin 'omlet.vim'
 " Plugin 'jcf/vim-latex'
-Plugin 'vim-scripts/haskell.vim'
+" Plugin 'vim-scripts/haskell.vim'
 Plugin 'spf13/PIV'
 Plugin 'othree/html5.vim'
-Plugin 'groenewege/vim-less'
+" Plugin 'groenewege/vim-less'
 Plugin 'slim-template/vim-slim'
 "Plugin 'klen/python-mode'
 Plugin 'django.vim'
-
-Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-fireplace'
+" Plugin 'guns/vim-clojure-static'
+" Plugin 'tpope/vim-fireplace'
 
 " Vim Text Objects
 " Plugin 'bkad/CamelCaseMotion'
@@ -113,13 +107,13 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'https://github.com/airblade/vim-gitgutter.git'
 Plugin 'idanarye/vim-merginal'
 " Plugin 'mileszs/ack.vim'
-" Plugin 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 " Plugin 'tpope/vim-classpath'
 
 " Colors
 " Plugin 'altercation/vim-colors-solarized'
-Plugin 'sjl/badwolf'
-Plugin 'morhetz/gruvbox'
+" Plugin 'sjl/badwolf'
+" Plugin 'morhetz/gruvbox'
 
 " Utilities, Dependencies
 Plugin 'L9'
