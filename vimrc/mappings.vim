@@ -15,6 +15,10 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Mapping shortcut to remove highlight
 map <Leader><Space> :nohl<CR>
 
+" comment code
+nmap <C-I> <plug>NERDCommenterToggle
+vmap <C-I> <plug>NERDCommenterToggle<C-C>
+
 " Align text
 map <Leader>a :Tabularize /
 
@@ -22,7 +26,7 @@ map gb :bnext<cr>
 map gB :bprev<cr>
 
 " Easier way to save files
-map ZX :w<CR>
+map df :w<CR>
 
 " Easier way to quit file
 noremap <F6> :q<CR>
@@ -81,3 +85,5 @@ cnoremap kj <C-C>
 inoremap <C-u> <C-o>u
 inoremap <C-y> <C-o><C-R>
 
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
