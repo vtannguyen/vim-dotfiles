@@ -2,11 +2,13 @@
 
 if has("gui_running")
 " GUI ================
-  colors sienna
+    " colors gruvbox
+  " colors sienna
   "colors zenburn
   "colors lucius
   "colors jellybeans
 	" colors badwolf
+  colors gruvbox
   set lines=70
   set columns=130
   " Remove scrollbars, toolbars, etc.
@@ -37,11 +39,14 @@ else
     set ttymouse=xterm2
   endif
 
+  colors gruvbox
+
   "colors zenburn
   "colors lucius
   "colors jellybeans
   "colors sienna
-	colors smyck
+	" colors smyck
+    " colors gruvbox
 	"colors wombat256mod
 	"colors xoria256
 	"colors colorzone

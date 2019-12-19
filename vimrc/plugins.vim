@@ -118,7 +118,8 @@ Plugin 'idanarye/vim-merginal'
 
 " Colors
 " Plugin 'altercation/vim-colors-solarized'
-" Plugin 'sjl/badwolf'
+Plugin 'sjl/badwolf'
+Plugin 'morhetz/gruvbox'
 
 " Utilities, Dependencies
 Plugin 'L9'
