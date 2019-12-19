@@ -22,14 +22,14 @@ vmap <C-I> <plug>NERDCommenterToggle<C-C>
 " Align text
 map <Leader>a :Tabularize /
 
-map gb :bnext<cr>
-map gB :bprev<cr>
+map gb :bnext<CR>
+map gB :bprev<CR>
 
 " Easier way to save files
 map df :w<CR>
 
 " Easier way to quit file
-noremap <F6> :q<CR>
+noremap gq :q<CR>
 
 " For those pesky :W errors...
 command! W w
