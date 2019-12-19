@@ -26,7 +26,7 @@ let g:NERDTreeShowHidden = 1
 let NERDTreeWinSize = 50
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let NERDTreeMinimalUI = 1
+"let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "~",
@@ -52,8 +52,21 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 " Syntastic
+"" Drop Syntastic settings at the end of the config file "
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_mode_map = {
+    \ "mode": "passive",
+    \ "active_filetypes": ["ruby", "php"],
+    \ "passive_filetypes": ["python"] }
 
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>
