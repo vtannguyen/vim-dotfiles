@@ -81,3 +81,6 @@ nmap <Leader>t :TagbarToggle<CR>
 
 " ZenCoding
 let g:user_zen_leader_key = '<c-t>'
+
+" Airline theme
+let g:airline_theme='ayu_mirage'

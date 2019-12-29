@@ -30,7 +30,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 " File explorer within Vim
 Plugin 'scrooloose/nerdtree'
 " Ultimate Vim statusline utility
-Plugin 'Lokaltog/vim-powerline'
+" Plugin 'Lokaltog/vim-powerline'
+" Plugin 'powerline/powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " Highlights the matching HTML tag
 Plugin 'gregsexton/MatchTag'
 " Rainbow parentheses!! :)
