@@ -15,10 +15,6 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Mapping shortcut to remove highlight
 map <Leader><Space> :nohl<CR>
 
-" comment code
-nmap <C-I> <plug>NERDCommenterToggle
-vmap <C-I> <plug>NERDCommenterToggle<C-C>
-
 " Align text
 map <Leader>a :Tabularize /
 
@@ -26,7 +22,7 @@ map gb :bnext<CR>
 map gB :bprev<CR>
 
 " Easier way to save files
-map df :w<CR>
+map gw :w<CR>
 
 " Easier way to quit file
 noremap gq :q<CR>
