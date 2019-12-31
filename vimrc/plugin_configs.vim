@@ -21,6 +21,10 @@ let g:ycm_key_list_previous_completion = ['<C-k>']
 " NERD_Tree
 let g:NERDTreeWinPos = 'right'
 map <Leader>n :NERDTreeFind<cr>
+" enable line numbers
+let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeShowHidden = 1
 let NERDTreeWinSize = 50
@@ -50,23 +54,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-" Syntastic
-"" Drop Syntastic settings at the end of the config file "
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_mode_map = {
-    \ "mode": "passive",
-    \ "active_filetypes": ["ruby", "php"],
-    \ "passive_filetypes": ["python"] }
 
 " Tabularize
 nmap <Leader>a= :Tabularize /=<CR>

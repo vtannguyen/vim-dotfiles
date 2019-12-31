@@ -18,8 +18,8 @@ Plugin 'VundleVim/Vundle.vim'
 " ----------------
 " Easier vim motions. Try <Leader><Leader>w or <Leader><Leader>fo
 Plugin 'Lokaltog/vim-easymotion'
-" Like Command-T or fuzzyfinder. Use to fuzzy find files
-Plugin 'kien/ctrlp.vim'
+" Use to fuzzy find file
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " vim-tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -30,8 +30,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 " File explorer within Vim
 Plugin 'scrooloose/nerdtree'
 " Ultimate Vim statusline utility
-" Plugin 'Lokaltog/vim-powerline'
-" Plugin 'powerline/powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -39,22 +37,12 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'gregsexton/MatchTag'
 " Rainbow parentheses!! :)
 Plugin 'kien/rainbow_parentheses.vim'
-" Colors
-" Plugin 'altercation/vim-colors-solarized'
-" Plugin 'sjl/badwolf'
-" Plugin 'morhetz/gruvbox'
-
 
 " ------------------------
 " --- Vim enhancements ---
 " ------------------------
-" Shows 'Nth match out of M' for searches
-" Plugin 'IndexedSearch'
 " Allow tab completion when searching
 Plugin 'vim-scripts/SearchComplete'
-" Simple plugin to view most recently used files
-" Plugin 'mru.vim'
-" Plugin 'bufexplorer.zip'
 " Adds visualizations for vim marks
 Plugin 'kshenoy/vim-signature'
 " Break or join lines
@@ -64,7 +52,6 @@ Plugin 'AndrewRadev/splitjoin.vim'
 " --- Editing enhancements ---
 " ----------------------------
 " Shortcuts to comment code. Use <Leader>cc or <Leader>c<Space>
-" Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-commentary'
 " Simple shortcuts to deal with surrounding symbols
 Plugin 'tpope/vim-surround'
@@ -72,10 +59,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'christoomey/vim-sort-motion'
 
-" Insert-mode autocompletion for quotes, parens, brackets, etc.
-" Plugin 'Raimondi/delimitMate'
 " Syntax checking in Vim!
-" Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-scripts/matchit.zip'
@@ -89,31 +73,19 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
 
 " Language support
-" Plugin 'tpope/vim-rails'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'tpope/vim-haml'
 Plugin 'pangloss/vim-javascript'
-" Plugin 'kchmck/vim-coffee-script'
 Plugin 'itspriddle/vim-jquery'
 Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-markdown'
-" Plugin 'vimoutliner/vimoutliner'
-" Plugin 'wannesm/wmgraphviz.vim'
-" Plugin 'omlet.vim'
-" Plugin 'jcf/vim-latex'
-" Plugin 'vim-scripts/haskell.vim'
 Plugin 'spf13/PIV'
 Plugin 'othree/html5.vim'
-" Plugin 'groenewege/vim-less'
 Plugin 'slim-template/vim-slim'
-"Plugin 'klen/python-mode'
-" Plugin 'guns/vim-clojure-static'
-" Plugin 'tpope/vim-fireplace'
 
 " Integrations
-" Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
-" Plugin 'tpope/vim-classpath'
+
+" Code formating. yapf need to install first via `pip install yapf`
+Plugin 'mindriot101/vim-yapf'
 
 " Copy and paste
 Plugin 'vim-scripts/ReplaceWithRegister'
@@ -134,11 +106,12 @@ Plugin 'davidhalter/jedi-vim'
 " ------------------------
 " --- Vim Text Objects ---
 " ------------------------
-" Plugin 'bkad/CamelCaseMotion'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'kana/vim-textobj-line'
 Plugin 'kana/vim-textobj-user'
 Plugin 'glts/vim-textobj-comment'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'wellle/targets.vim'
 
 " -------------------
 " --- Git for Vim ---
