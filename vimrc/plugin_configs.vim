@@ -74,4 +74,5 @@ let g:airline_theme='base16_atelierforest'
 
 " pydocstring
 let g:pydocstring_templates_dir = '~/.vim/pydocstring_template/'
+let g:pydocstring_enable_mapping = 0
 
