@@ -71,3 +71,7 @@ let g:user_zen_leader_key = '<c-t>'
 
 " Airline theme
 let g:airline_theme='base16_atelierforest'
+
+" pydocstring
+let g:pydocstring_templates_dir = '~/.vim/pydocstring_template/'
+

@@ -102,6 +102,8 @@ Plugin 'django.vim'
 Plugin 'dense-analysis/ale'
 " Auto complete python
 Plugin 'davidhalter/jedi-vim'
+" Auto generate docstring
+Plugin 'heavenshell/vim-pydocstring'
 
 " ------------------------
 " --- Vim Text Objects ---
