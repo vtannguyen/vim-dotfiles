@@ -111,7 +111,6 @@ Plugin 'heavenshell/vim-pydocstring'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'kana/vim-textobj-line'
 Plugin 'kana/vim-textobj-user'
-Plugin 'glts/vim-textobj-comment'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'wellle/targets.vim'
 
