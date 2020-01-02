@@ -71,12 +71,6 @@ vnoremap < <gv
 vnoremap > >gv
 vnoremap <Space> I<Space><Esc>gv
 
-" Map the Esc key
-inoremap kj <Esc>
-
-" esc in command mode
-cnoremap kj <C-C>
-
 " Undo and redo in insert mode
 inoremap <C-u> <C-o>u
 inoremap <C-y> <C-o><C-R>
