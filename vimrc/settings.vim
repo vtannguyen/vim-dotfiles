@@ -1,12 +1,13 @@
 " All the Vim settings go here!
 
-set autoindent                        " always set autoindenting on
+"set autoindent                        " always set autoindenting on
 set autoread                          " Refresh buffer if file has been changed externally. Note that this doesn't automatically run every some interval.
 set autowrite                         " Automatically save before commands like :next
 set backspace=indent,eol,start        " Backspace over everything.
 set cursorline                        " highlight cursor line
 set encoding=utf-8
-set noexpandtab
+" set noexpandtab
+set expandtab
 set softtabstop=0
 set clipboard=unnamedplus
 set foldlevel=20
@@ -25,12 +26,13 @@ set modelines=1
 set mouse=a
 set noequalalways
 set number
+set relativenumber
 set pastetoggle=<F7>
 set ruler
 set scrolljump=3
 set scrolloff=5
 set shell=/bin/bash
-set shiftwidth=2
+set shiftwidth=4
 set shortmess=atI
 set showcmd                           " Display incomplete commands
 set showcmd                           " display commands as they are typed
@@ -38,7 +40,7 @@ set smartcase
 set splitbelow
 set splitright
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " taken from :help fugitive-statusline
-set tabstop=2
+set tabstop=4
 set tags=./tags;/
 set textwidth=78
 set timeoutlen=250                    " Time to wait after ESC
@@ -49,6 +51,6 @@ set visualbell
 set wildmenu
 set wildmode=list:longest,full        " bash-like command line tab completion
 set winheight=24
-"set winwidth=94
+set winwidth=85
 set wrap
 set wrapmargin=2
