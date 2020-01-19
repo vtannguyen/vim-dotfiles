@@ -10,3 +10,10 @@ in http://nelsonware.com/blog/2019/04/30/how-to-map-caps-lock-to-escape-and-cont
 * Then install wl-clipboard for system clipboard copy and paste
 `sudo dnf install wl-clipboard`
  
+* Next clone the repo to dir ~/.vim
+`git clone https://github.com/vtannguyen/vim-dotfiles.git ~/.vim`
+
+* Copy file .vimrc-main out and change it's name to .vimrc
+* Finally open vim and install all plugins by typing `:PluginInstall`
+
+Enjoy!!!
