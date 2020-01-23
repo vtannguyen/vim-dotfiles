@@ -76,3 +76,13 @@ let g:airline_theme='base16_atelierforest'
 let g:pydocstring_templates_dir = '~/.vim/pydocstring_template/'
 let g:pydocstring_enable_mapping = 0
 
+" simplyfold settings
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+let g:SimpylFold_docstring_preview=1
+
+
+

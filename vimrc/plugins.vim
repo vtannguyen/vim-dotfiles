@@ -125,6 +125,12 @@ Plugin 'https://github.com/airblade/vim-gitgutter.git'
 " Git branch with vim
 Plugin 'idanarye/vim-merginal'
 
+" --------------------
+" --- code folding ---
+" --------------------
+"
+Plugin 'tmhedberg/SimpylFold'
+
 " Utilities, Dependencies
 Plugin 'L9'
 
