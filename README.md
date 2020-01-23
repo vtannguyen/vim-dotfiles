@@ -17,3 +17,8 @@ in http://nelsonware.com/blog/2019/04/30/how-to-map-caps-lock-to-escape-and-cont
 * Finally open vim and install all plugins by typing `:PluginInstall`
 
 Enjoy!!!
+
+### Debian Intallation
+
+On a debian system make sure you install vim-python-jedi for proper code
+completion
