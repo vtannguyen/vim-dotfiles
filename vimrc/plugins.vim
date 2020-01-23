@@ -125,13 +125,13 @@ Plugin 'https://github.com/airblade/vim-gitgutter.git'
 " Git branch with vim
 Plugin 'idanarye/vim-merginal'
 
-" -------------------
-" --- code foldingn '' ---
-" -------------------
+" --------------------
+" --- code folding ---
+" --------------------
 "
 Plugin 'tmhedberg/SimpylFold'
 
-" Utilities, Dependenciesn ''
+" Utilities, Dependencies
 Plugin 'L9'
 
 call vundle#end()            " required
