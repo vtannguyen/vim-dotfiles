@@ -9,6 +9,9 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 
+" vimux
+let g:VimuxOrientation = "h"
+
 " NERD_Commenter
 " Add a space before comments
 let g:NERDSpaceDelims = 1
