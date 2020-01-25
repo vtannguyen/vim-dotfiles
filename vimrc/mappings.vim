@@ -96,3 +96,16 @@ map <Leader>vs :VimuxInterruptRunner<CR>
 
 " Zoom the runner pane (use <bind-key> z to restore runner pane)
 map <Leader>vz :call VimuxZoomRunner()<CR>
+
+" Pytest
+nmap <silent><Leader>f <Esc>:Pytest file<CR>
+nmap <silent><Leader>ff <Esc>:Pytest function<CR>
+nmap <silent><Leader>c <Esc>:Pytest class<CR>
+nmap <silent><Leader>m <Esc>:Pytest method<CR>
+nmap <silent><Leader>p <Esc>:Pytest project<CR>
+
+nmap <silent><Leader>fv <Esc>:Pytest file verbose<CR>
+nmap <silent><Leader>ffv <Esc>:Pytest function verbose<CR>
+nmap <silent><Leader>cv <Esc>:Pytest class verbose<CR>
+nmap <silent><Leader>mv <Esc>:Pytest method verbose<CR>
+nmap <silent><Leader>pv <Esc>:Pytest project verbose<CR>
