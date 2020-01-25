@@ -20,9 +20,16 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Lokaltog/vim-easymotion'
 " Use to fuzzy find file
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+
+
+" ----------------
+" ----- Tmux -----
+" ----------------
 " vim-tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
-
+" run tmux command from vim termina
+Plugin 'benmills/vimux'
 
 " -----------------------
 " --- UI enhancements ---
@@ -104,6 +111,8 @@ Plugin 'dense-analysis/ale'
 Plugin 'davidhalter/jedi-vim'
 " Auto generate docstring
 Plugin 'heavenshell/vim-pydocstring'
+" Python code folding
+Plugin 'tmhedberg/SimpylFold'
 
 " ------------------------
 " --- Vim Text Objects ---
@@ -125,11 +134,6 @@ Plugin 'https://github.com/airblade/vim-gitgutter.git'
 " Git branch with vim
 Plugin 'idanarye/vim-merginal'
 
-" --------------------
-" --- code folding ---
-" --------------------
-"
-Plugin 'tmhedberg/SimpylFold'
 
 " Utilities, Dependencies
 Plugin 'L9'

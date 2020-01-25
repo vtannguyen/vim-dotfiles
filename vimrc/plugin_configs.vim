@@ -27,7 +27,7 @@ let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeShowHidden = 1
-let NERDTreeWinSize = 50
+let NERDTreeWinSize = 40
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "let NERDTreeMinimalUI = 1
