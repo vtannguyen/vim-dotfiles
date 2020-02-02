@@ -111,16 +111,15 @@ nmap <silent><Leader>mv <Esc>:Pytest method verbose<CR>
 nmap <silent><Leader>pv <Esc>:Pytest project verbose<CR>
 
 " Run script
-nmap <silent><Leader>xb <Esc>:RunScript bash<CR>
-nmap <silent><Leader>xp <Esc>:RunScript python<CR>
+nmap <silent><Leader>x <Esc>:RunScript<CR>
 " This function need to be put in a proper package
-command! -nargs=+ RunScript call s:RunScript(<q-args>)
-function! s:RunScript(type)
-  if a:type == 'bash'
+command! RunScript call s:RunScript()
+function! s:RunScript()
+  if expand("%:e") == 'sh'
       call VimuxRunCommand("./" . expand("%"))
-  elseif a:type == 'python'
+  elseif expand("%:e") == 'py'
       call VimuxRunCommand("python " . expand("%"))
   else
-      echo "Script type \"" . a:type "\" is currently not supported"
+      echo "Script extension \"." . expand("%:e") "\" is currently not supported"
   endif
 endfunction
