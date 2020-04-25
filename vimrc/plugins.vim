@@ -114,7 +114,7 @@ Plugin 'heavenshell/vim-pydocstring'
 " Python code folding
 Plugin 'tmhedberg/SimpylFold'
 " Pytest support
-Plugin 'vtannguyen/pytest.vim'
+Plugin 'vtannguyen/vimux-pytest.vim'
 
 " ------------------------
 " --- Vim Text Objects ---
