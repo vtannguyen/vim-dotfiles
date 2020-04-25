@@ -116,6 +116,12 @@ Plugin 'tmhedberg/SimpylFold'
 " Pytest support
 Plugin 'vtannguyen/vimux-pytest.vim'
 
+" ------------------------------
+" --- Javascript development ---
+" ------------------------------
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'alvan/vim-closetag'
+
 " ------------------------
 " --- Vim Text Objects ---
 " ------------------------

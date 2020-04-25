@@ -87,5 +87,6 @@ set foldlevel=99
 nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
-
+" Vim close tag
+let g:closetag_filenames = '*.html,*.js,*.phtml'
 
