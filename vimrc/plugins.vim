@@ -121,6 +121,10 @@ Plugin 'vtannguyen/vimux-pytest.vim'
 " ------------------------------
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'alvan/vim-closetag'
+" Code formatter
+Plugin 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " ------------------------
 " --- Vim Text Objects ---
