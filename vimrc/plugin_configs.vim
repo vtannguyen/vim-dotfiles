@@ -90,3 +90,6 @@ let g:SimpylFold_docstring_preview=1
 " Vim close tag
 let g:closetag_filenames = '*.html,*.js,*.phtml'
 
+" Vim wiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]

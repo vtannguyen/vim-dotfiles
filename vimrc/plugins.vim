@@ -146,6 +146,14 @@ Plugin 'https://github.com/airblade/vim-gitgutter.git'
 " Git branch with vim
 Plugin 'idanarye/vim-merginal'
 
+" ------------------------
+" ---- Miscellaneous -----
+" ------------------------
+" Personal wiki for vim
+Plugin 'vimwiki/vimwiki'
+" Markdown preview for vim
+Plugin 'iamcco/markdown-preview.vim'
+
 
 " Utilities, Dependencies
 Plugin 'L9'
