@@ -1,0 +1,15 @@
+snippet tes
+	def test_${1}(${2}):
+	    # Arrange
+		${3}
+		# Act
+		# Assert
+
+snippet fixture
+	@pytest.fixture
+	def ${1}(${2}):
+	    # Test setup
+		${3}
+		yield ${4}
+	    # Test tear down
+		${5}
