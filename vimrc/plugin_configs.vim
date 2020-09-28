@@ -76,8 +76,8 @@ let g:user_zen_leader_key = '<c-t>'
 let g:airline_theme='base16_atelierforest'
 
 " pydocstring
-let g:pydocstring_templates_dir = '~/.vim/pydocstring_template/'
 let g:pydocstring_enable_mapping = 0
+let g:pydocstring_formatter = 'google'
 
 " simplyfold settings
 set foldmethod=indent

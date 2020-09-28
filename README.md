@@ -15,6 +15,7 @@ in http://nelsonware.com/blog/2019/04/30/how-to-map-caps-lock-to-escape-and-cont
 
 * Copy file .vimrc-main out and change it's name to .vimrc
 * Finally open vim and install all plugins by typing `:PluginInstall`
+* Note: the plugin `YouCompleteMe` and `vim-pydocstring` require manual installation
 
 Enjoy!!!
 
