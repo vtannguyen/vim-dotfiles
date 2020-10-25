@@ -19,6 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 " ----------------
 " Easier vim motions. Try <Leader><Leader>w or <Leader><Leader>fo
 Plugin 'Lokaltog/vim-easymotion'
+
 " Jump between pair of {}, [] or ()
 Plugin 'vim-scripts/matchit.zip'
 
