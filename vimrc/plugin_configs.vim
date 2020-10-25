@@ -1,27 +1,22 @@
 " Plugin-specific configurations go here
 
-" CtrlP
-let g:ctrlp_map = '<c-p>'
-map <C-b> :CtrlPBuffer<CR>
-
-" vim-latex
-let g:tex_flavor='latex'
-let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_MultipleCompileFormats = 'dvi,pdf'
-
-" vimux
+" --------------------------
+" ----- Vimux settings -----
+" --------------------------
 let g:VimuxOrientation = "h"
 
-" NERD_Commenter
-" Add a space before comments
-let g:NERDSpaceDelims = 1
 
-" YouCompleteMe
+" ----------------------------------
+" ----- YouCompleteMe settings -----
+" ----------------------------------
 " Avoid conflict with SnipMate
 let g:ycm_key_list_select_completion = ['<C-j>']
 let g:ycm_key_list_previous_completion = ['<C-k>']
 
-" NERD_Tree
+
+" ------------------------------
+" ----- NERD_Tree settings -----
+" ------------------------------
 let g:NERDTreeWinPos = 'right'
 map <Leader>n :NERDTreeFind<cr>
 " enable line numbers
@@ -48,17 +43,20 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-" Python-mode
-let g:pymode_lint_write = 0
 
-" Rainbow Parentheses
+" ----------------------------------------
+" ----- Rainbow Parentheses settings -----
+" ----------------------------------------
 " Always on
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-" Tabularize
+
+" -------------------------------
+" ----- Tabularize settings -----
+" -------------------------------
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:<CR>
@@ -66,33 +64,57 @@ vmap <Leader>a: :Tabularize /:<CR>
 nmap <Leader>a, :Tabularize /,<CR>
 vmap <Leader>a, :Tabularize /,<CR>
 
-" tagbar
+
+" ---------------------------
+" ----- Tagbar settings -----
+" ---------------------------
 nmap <Leader>t :TagbarToggle<CR>
 
-" ZenCoding
-let g:user_zen_leader_key = '<c-t>'
 
-" Airline theme
+" ----------------------------------
+" ----- Airline theme settings -----
+" ----------------------------------
 let g:airline_theme='base16_atelierforest'
 
-" pydocstring
+
+" --------------------------------
+" ----- Pydocstring settings -----
+" --------------------------------
 let g:pydocstring_enable_mapping = 0
 let g:pydocstring_formatter = 'google'
 
-" simplyfold settings
+
+" -------------------------------
+" ----- Simplyfold settings -----
+" -------------------------------
 set foldmethod=indent
 set foldlevel=99
-
 " Enable folding with the spacebar
 nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
-" Vim close tag
+
+" ----------------------------------
+" ----- Vim close tag settings -----
+" ----------------------------------
 let g:closetag_filenames = '*.html,*.js,*.phtml'
 
-" Vim wiki
+
+" -----------------------------
+" ----- Vim wiki settings -----
+" -----------------------------
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
-" fuzzy finder
+
+" ---------------------------------
+" ----- Fuzzy finder settings -----
+" ---------------------------------
 let g:fzf_layout = {'down': '30%'}
+
+
+" --------------------------------
+" ----- vim-codefmt settings -----
+" --------------------------------
+autocmd FileType html,typescript,javascript,css,less,scss,json,yaml,markdown,vue let b:codefmt_formatter = 'prettier'
+autocmd FileType python let b:codefmt_formatter = 'yapf'

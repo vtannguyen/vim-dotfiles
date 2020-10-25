@@ -2,12 +2,12 @@
 
 if has("gui_running")
 " GUI ================
-    " colors gruvbox
+  " colors gruvbox
   " colors sienna
-  "colors zenburn
-  "colors lucius
-  "colors jellybeans
-	" colors badwolf
+  " colors zenburn
+  " colors lucius
+  " colors jellybeans
+  " colors badwolf
   colors gruvbox
   set lines=70
   set columns=130
@@ -31,7 +31,7 @@ else
   if $SSH_CONNECTION == ""  " Local terminal
     set t_Co=256
   else            " Remote terminal
-    "set t_Co=16
+    " set t_Co=16
     set t_Co=256
   endif
 
@@ -41,15 +41,15 @@ else
 
   colors gruvbox
 
-  "colors zenburn
-  "colors lucius
-  "colors jellybeans
-  "colors sienna
-	" colors smyck
-    " colors gruvbox
-	"colors wombat256mod
-	"colors xoria256
-	"colors colorzone
+  " colors zenburn
+  " colors lucius
+  " colors jellybeans
+  " colors sienna
+  " colors smyck
+  " colors gruvbox
+  " colors wombat256mod
+  " colors xoria256
+  " colors colorzone
 endif
 
 if exists('+colorcolumn')

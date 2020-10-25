@@ -13,7 +13,7 @@ in http://nelsonware.com/blog/2019/04/30/how-to-map-caps-lock-to-escape-and-cont
 * Next clone the repo to dir ~/.vim
 `git clone https://github.com/vtannguyen/vim-dotfiles.git ~/.vim`
 
-* Copy file .vimrc-main out and change it's name to .vimrc
+* Copy file .vimrc out
 * Finally open vim and install all plugins by typing `:PluginInstall`
 * Note: the plugin `YouCompleteMe` and `vim-pydocstring` require manual installation
 
