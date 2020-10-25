@@ -1,210 +1,204 @@
-set nocompatible              " be improved, required
-filetype off                  " required
-" Where all the plugins are specified, using Vundle
-
-" Initialize vundle!
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
 " ----------------------------
-" Plugins, managed by Vundle!
+" Plugs, managed by Vundle!
 " ----------------------------
 
 " Use to manage plugins!
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 
 " ----------------
 " --- Movement ---
 " ----------------
 " Easier vim motions. Try <Leader><Leader>w or <Leader><Leader>fo
-Plugin 'Lokaltog/vim-easymotion'
+Plug 'Lokaltog/vim-easymotion'
 
 " Jump between pair of {}, [] or ()
-Plugin 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/matchit.zip'
 
 
 " ------------------------
 " --- Vim Text Objects ---
 " ------------------------
 " Select and operate on indent text objects
-Plugin 'michaeljsmith/vim-indent-object'
+Plug 'michaeljsmith/vim-indent-object'
 
 " Select and operate on line text objects
-Plugin 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-line'
 
 " Select and operate on entire file text objects
-Plugin 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-entire'
 
 " Provide more text object, e.g [], {}...
-Plugin 'wellle/targets.vim'
+Plug 'wellle/targets.vim'
 
 " Required by vim-textobj-line and vim-textobj-entire
-Plugin 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-user'
 
 " -----------------------
 " --- UI enhancements ---
 " -----------------------
 " Ultimate Vim statusline utility
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Highlights the matching HTML tag
-Plugin 'gregsexton/MatchTag'
+Plug 'gregsexton/MatchTag'
 
 " Rainbow parentheses!! :)
-Plugin 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 
 " Adds visualizations for vim marks
-Plugin 'kshenoy/vim-signature'
+Plug 'kshenoy/vim-signature'
 
 
 " ------------------------
 " --- Files management ---
 " ------------------------
 " File explorer within Vim
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " Use to fuzzy find file
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 
 " --------------------
 " --- Autocomplete ---
 " --------------------
 " Allow tab completion when searching
-Plugin 'vim-scripts/SearchComplete'
+Plug 'vim-scripts/SearchComplete'
 
 " Create boilerplates
-Plugin 'garbas/vim-snipmate'
+Plug 'garbas/vim-snipmate'
 " snipMate dependences
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
 
 " Helps to end certain structures automatically
-Plugin 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise'
 
 " Autocomplete
-Plugin 'Valloric/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 
 
 " ----------------------------
 " --- Editing enhancements ---
 " ----------------------------
 " Shortcuts to comment code. Use <Leader>cc or <Leader>c<Space>
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
 " Text filtering and alignment
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
 " Break or join lines
-Plugin 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/splitjoin.vim'
 "
 " Select and operate on surrounding symbols
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Code formating.
-Plugin 'google/vim-maktaba'
-Plugin 'google/vim-codefmt'
-Plugin 'google/vim-glaive'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
 
 " Copy and paste
-Plugin 'vim-scripts/ReplaceWithRegister'
+Plug 'vim-scripts/ReplaceWithRegister'
 " Need to install wl-clipboard first
-Plugin 'christoomey/vim-system-copy'
+Plug 'christoomey/vim-system-copy'
 
 
 " ----------------------
 " --- code structure ---
 " ----------------------
 " Browse the tags of the current file and get an overview of its structure
-Plugin 'preservim/tagbar'
+Plug 'preservim/tagbar'
 
 
 " ------------------------
 " --- Syntax highlight ---
 " ------------------------
-Plugin 'pangloss/vim-javascript'
-Plugin 'elzr/vim-json'
-Plugin 'tpope/vim-markdown'
-Plugin 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'elzr/vim-json'
+Plug 'tpope/vim-markdown'
+Plug 'othree/html5.vim'
 
 
 " --------------------------
 " --- Python development ---
 " --------------------------
 " class, function and docstring text object
-Plugin 'jeetsukumaran/vim-pythonsense'
+Plug 'jeetsukumaran/vim-pythonsense'
 
 " Syntax checking
-Plugin 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 
 " Auto complete python
-Plugin 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 
 " Auto generate docstring
-Plugin 'heavenshell/vim-pydocstring'
+Plug 'heavenshell/vim-pydocstring'
 
 " Python code folding
-Plugin 'tmhedberg/SimpylFold'
+Plug 'tmhedberg/SimpylFold'
 
 " Pytest support
-Plugin 'vtannguyen/vimux-pytest.vim'
+Plug 'vtannguyen/vimux-pytest.vim'
 
 
 " ------------------------------
 " --- Javascript development ---
 " ------------------------------
 " Syntax highlight for jsx
-Plugin 'maxmellon/vim-jsx-pretty'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Close tag for jsx
-Plugin 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag'
 
 
 " -------------------
 " --- Git for Vim ---
 " -------------------
 " Run git command in vim
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Show git status flags in Nerdtree
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Show git diff
-Plugin 'airblade/vim-gitgutter.git'
+Plug 'airblade/vim-gitgutter'
 
 " Git branch with vim
-Plugin 'idanarye/vim-merginal'
+Plug 'idanarye/vim-merginal'
 
 
 " ----------------
 " ----- Tmux -----
 " ----------------
 " vim-tmux navigator
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 " run tmux command from vim termina
-Plugin 'benmills/vimux'
+Plug 'benmills/vimux'
 
 
 " -------------------
 " ---- Vim Note -----
 " -------------------
 " Personal wiki for vim
-Plugin 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 
 " Markdown preview for vim
-Plugin 'iamcco/markdown-preview.vim'
+Plug 'iamcco/markdown-preview.vim'
 
 
-" Utilities, Dependencies
-Plugin 'L9'
-
-call vundle#end()            " required
+" Initialize plugin system
+call plug#end()
 call glaive#Install()
 " Optional: Enable codefmt's default mappings on the <Leader>= prefix.
 Glaive codefmt plugin[mappings]
 " Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
-filetype plugin indent on    " required
