@@ -3,14 +3,6 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" ----------------------------
-" Plugs, managed by Vundle!
-" ----------------------------
-
-" Use to manage plugins!
-Plug 'VundleVim/Vundle.vim'
-
-
 " ----------------
 " --- Movement ---
 " ----------------
