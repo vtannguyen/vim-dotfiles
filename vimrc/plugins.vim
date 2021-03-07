@@ -52,7 +52,7 @@ Plug 'kshenoy/vim-signature'
 " --- Files management ---
 " ------------------------
 " File explorer within Vim
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 
 " Use to fuzzy find file
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -133,7 +133,7 @@ Plug 'dense-analysis/ale'
 Plug 'davidhalter/jedi-vim'
 
 " Auto generate docstring
-Plug 'heavenshell/vim-pydocstring'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
 " Python code folding
 Plug 'tmhedberg/SimpylFold'

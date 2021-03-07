@@ -118,3 +118,9 @@ let g:fzf_layout = {'down': '30%'}
 " --------------------------------
 autocmd FileType html,typescript,javascript,css,less,scss,json,yaml,markdown,vue let b:codefmt_formatter = 'prettier'
 autocmd FileType python let b:codefmt_formatter = 'yapf'
+
+
+" ----------------------------
+" ----- SnipMate Setting -----
+" ----------------------------
+let g:snipMate = { 'snippet_version' : 1 }
