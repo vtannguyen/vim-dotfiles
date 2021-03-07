@@ -141,6 +141,9 @@ Plug 'tmhedberg/SimpylFold'
 " Pytest support
 Plug 'vtannguyen/vimux-pytest.vim'
 
+" Python Read–Eval–Print Loop (REPL)
+Plug 'sillybun/vim-repl'
+
 
 " ------------------------------
 " --- Javascript development ---
