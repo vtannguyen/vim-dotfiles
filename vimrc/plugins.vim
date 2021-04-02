@@ -120,6 +120,14 @@ Plug 'tpope/vim-markdown'
 Plug 'othree/html5.vim'
 
 
+" ---------------------------
+" --- General development ---
+" ---------------------------
+" Language Server Protocol
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
+
 " --------------------------
 " --- Python development ---
 " --------------------------
@@ -128,9 +136,6 @@ Plug 'jeetsukumaran/vim-pythonsense'
 
 " Syntax checking
 Plug 'dense-analysis/ale'
-
-" Auto complete python
-Plug 'davidhalter/jedi-vim'
 
 " Auto generate docstring
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
