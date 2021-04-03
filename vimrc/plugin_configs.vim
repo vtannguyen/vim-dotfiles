@@ -65,12 +65,6 @@ nmap <Leader>a, :Tabularize /,<CR>
 vmap <Leader>a, :Tabularize /,<CR>
 
 
-" ---------------------------
-" ----- Tagbar settings -----
-" ---------------------------
-nmap <Leader>t :TagbarToggle<CR>
-
-
 " ----------------------------------
 " ----- Airline theme settings -----
 " ----------------------------------
@@ -148,3 +142,10 @@ let g:repl_position = 3
 " ----- SnipMate Setting -----
 " ----------------------------
 let g:snipMate = { 'snippet_version' : 1 }
+
+
+" ----------------------------
+" ----- vim test setting -----
+" ----------------------------
+let test#strategy = "vimux"
+let test#python#runner = 'pytest'

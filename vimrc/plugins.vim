@@ -127,6 +127,9 @@ Plug 'othree/html5.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 
+" Test
+Plug 'vim-test/vim-test'
+
 
 " --------------------------
 " --- Python development ---
@@ -142,9 +145,6 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
 " Python code folding
 Plug 'tmhedberg/SimpylFold'
-
-" Pytest support
-Plug 'vtannguyen/vimux-pytest.vim'
 
 " Python Read–Eval–Print Loop (REPL)
 Plug 'sillybun/vim-repl'

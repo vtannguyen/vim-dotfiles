@@ -97,13 +97,6 @@ map <Leader>vs :VimuxInterruptRunner<CR>
 " Zoom the runner pane (use <bind-key> z to restore runner pane)
 map <Leader>vz :call VimuxZoomRunner()<CR>
 
-" Pytest
-nmap <silent><Leader>f <Esc>:Pytest file verbose<CR>
-nmap <silent><Leader>ff <Esc>:Pytest function verbose<CR>
-nmap <silent><Leader>c <Esc>:Pytest class verbose<CR>
-nmap <silent><Leader>m <Esc>:Pytest method verbose<CR>
-nmap <silent><Leader>p <Esc>:Pytest project verbose<CR>
-
 " Run script
 nmap <silent><Leader>x <Esc>:RunScript<CR>
 " This function need to be put in a proper package
@@ -129,3 +122,10 @@ nmap <leader>rn <plug>(lsp-rename)
 nmap [g <plug>(lsp-previous-diagnostic)
 nmap ]g <plug>(lsp-next-diagnostic)
 nmap K <plug>(lsp-hover)
+
+" vim test
+nmap <leader>tn :TestNearest<CR>
+nmap <leader>tf :TestFile<CR>
+nmap <leader>ts :TestSuite<CR>
+nmap <leader>tl :TestLast<CR>
+nmap <leader>tg :TestVisit<CR>
