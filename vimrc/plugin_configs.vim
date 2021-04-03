@@ -125,7 +125,8 @@ autocmd FileType python let b:codefmt_formatter = 'yapf'
 " --------------------------------
 let g:repl_program = {
             \   'python': 'python',
-            \   'default': 'bash',
+            \   'bash': 'bash',
+            \   'default': 'python',
             \   'r': 'R',
             \   'lua': 'lua',
             \   'vim': 'vim -e',
@@ -138,9 +139,6 @@ let g:repl_cursor_down = 1
 let g:repl_python_automerge = 1
 let g:repl_ipython_version = '7'
 let g:repl_output_copy_to_register = "t"
-autocmd Filetype python nnoremap <F12> <Esc>:REPLDebugStopAtCurrentLine<Cr>
-autocmd Filetype python nnoremap <F8> <Esc>:REPLPDBN<Cr>
-autocmd Filetype python nnoremap <F11> <Esc>:REPLPDBS<Cr>
 nnoremap <leader>re :REPLToggle<Cr>
 nnoremap <leader>we :REPLSendSession<Cr>
 let g:repl_position = 3
