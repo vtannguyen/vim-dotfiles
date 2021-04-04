@@ -44,6 +44,12 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ }
 
 
+" ---------------------------
+" ----- Tagbar settings -----
+" ---------------------------
+nmap <Leader>t :TagbarToggle<CR>
+
+
 " ----------------------------------------
 " ----- Rainbow Parentheses settings -----
 " ----------------------------------------
