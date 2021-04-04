@@ -124,6 +124,9 @@ Plug 'othree/html5.vim'
 " --- General development ---
 " ---------------------------
 " Language Server Protocol
+"" Tested language server. To install run :LspInstallServer <server_name>
+""      Python -> jedi-language-server
+""      Javascript -> typescript-language-server
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 
