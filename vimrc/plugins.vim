@@ -130,6 +130,9 @@ Plug 'mattn/vim-lsp-settings'
 " Test
 Plug 'vim-test/vim-test'
 
+" Debugger
+Plug 'puremourning/vimspector'
+
 
 " --------------------------
 " --- Python development ---

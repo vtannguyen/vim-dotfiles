@@ -155,3 +155,11 @@ let g:snipMate = { 'snippet_version' : 1 }
 " ----------------------------
 let test#strategy = "vimux"
 let test#python#runner = 'pytest'
+
+
+" ------------------------------
+" ----- vimspector setting -----
+" ------------------------------
+let g:vimspector_enable_mappings = 'HUMAN'
+" for normal mode - the word under the cursor
+nmap <Leader>di <Plug>VimspectorBalloonEval
