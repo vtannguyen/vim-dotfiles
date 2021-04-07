@@ -75,9 +75,6 @@ vnoremap <Space> I<Space><Esc>gv
 inoremap <C-u> <C-o>u
 inoremap <C-y> <C-o><C-R>
 
-" Remove all trailing whitespace by pressing F5
-nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-
 " Vimux
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
