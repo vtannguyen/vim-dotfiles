@@ -13,19 +13,19 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
 " Mapping shortcut to remove highlight
-map <Leader><Space> :nohl<CR>
+nnoremap <Leader><Space> :nohl<CR>
 
 " Align text
-map <Leader>a :Tabularize /
+nnoremap <Leader>a :Tabularize /
 
-map gb :bnext<CR>
-map gB :bprev<CR>
+nnoremap gb :bnext<CR>
+nnoremap gB :bprev<CR>
 
 " Easier way to save files
-map gw :w<CR>
+nnoremap gw :w<CR>
 
 " Easier way to quit file
-noremap gq :q<CR>
+nnoremap gq :q<CR>
 
 " For those pesky :W errors...
 command! W w
@@ -33,38 +33,28 @@ command! Wq wq
 command! WQ wq
 command! Q q
 
-" Better scrolling
-noremap <F3> 5<C-Y>
-noremap <F4> 5<C-E>
-
 " Fix that annoying <C-j> imaps mapping problem
 " Something /must/ map to <Plug>IMAP_JumpForward in order to remap <C-j>
 map <C-SPACE> <Plug>IMAP_JumpForward
 
 " Make it easier to move between windows
-nmap <C-H> <C-W>h
-nmap <C-J> <C-W>j
-nmap <C-K> <C-W>k
-nmap <C-L> <C-W>l
-imap <C-H> <Esc><C-W>h
-imap <C-J> <Esc><C-W>j
-imap <C-K> <Esc><C-W>k
-imap <C-L> <Esc><C-W>l
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+inoremap <C-H> <Esc><C-W>h
+inoremap <C-J> <Esc><C-W>j
+inoremap <C-K> <Esc><C-W>k
+inoremap <C-L> <Esc><C-W>l
 
 " easier mappings for resizing windows
 nnoremap <C-w>< 60<C-w><
 nnoremap <C-w>> 60<C-w>>
-nmap + 5<C-w>+
-nmap _ 5<C-w>-
+nnoremap + 5<C-w>+
+nnoremap _ 5<C-w>-
 
 " Make it easier to paste in insert mode
 inoremap PPP <Esc>pa
-
-" Easier to copy and paste from clipboard easier
-noremap <Leader>Y "*y
-noremap <Leader>P "*p
-noremap <Leader>y "+y
-noremap <Leader>p "+p
 
 " While shifting indent, stay in visual mode
 vnoremap < <gv
@@ -77,25 +67,25 @@ inoremap <C-y> <C-o><C-R>
 
 " Vimux
 " Prompt for a command to run
-map <Leader>vp :VimuxPromptCommand<CR>
+nnoremap <Leader>vp :VimuxPromptCommand<CR>
 
 " Run last command executed by VimuxRunCommand
-map <Leader>vl :VimuxRunLastCommand<CR>
+nnoremap <Leader>vl :VimuxRunLastCommand<CR>
 
 " Inspect runner pane
-map <Leader>vi :VimuxInspectRunner<CR>
+nnoremap <Leader>vi :VimuxInspectRunner<CR>
 
 " Close vim tmux runner opened by VimuxRunCommand
-map <Leader>vq :VimuxCloseRunner<CR>
+nnoremap <Leader>vq :VimuxCloseRunner<CR>
 
 " Interrupt any command running in the runner pane
-map <Leader>vs :VimuxInterruptRunner<CR>
+nnoremap <Leader>vs :VimuxInterruptRunner<CR>
 
 " Zoom the runner pane (use <bind-key> z to restore runner pane)
-map <Leader>vz :call VimuxZoomRunner()<CR>
+nnoremap <Leader>vz :call VimuxZoomRunner()<CR>
 
 " Run script
-nmap <silent><Leader>x <Esc>:RunScript<CR>
+nnoremap <silent><Leader>x <Esc>:RunScript<CR>
 " This function need to be put in a proper package
 command! RunScript call s:RunScript()
 function! s:RunScript()
@@ -109,20 +99,20 @@ function! s:RunScript()
 endfunction
 
 " vim-lsp
-nmap gd <plug>(lsp-definition)
-nmap gs <plug>(lsp-document-symbol-search)
-nmap gS <plug>(lsp-workspace-symbol-search)
-nmap <leader>gr <plug>(lsp-references)
-nmap gi <plug>(lsp-implementation)
-nmap <leader>gt <plug>(lsp-type-definition)
-nmap <leader>rn <plug>(lsp-rename)
-nmap [g <plug>(lsp-previous-diagnostic)
-nmap ]g <plug>(lsp-next-diagnostic)
-nmap K <plug>(lsp-hover)
+nnoremap gd <plug>(lsp-definition)
+nnoremap gs <plug>(lsp-document-symbol-search)
+nnoremap gS <plug>(lsp-workspace-symbol-search)
+nnoremap <leader>gr <plug>(lsp-references)
+nnoremap gi <plug>(lsp-implementation)
+nnoremap <leader>gt <plug>(lsp-type-definition)
+nnoremap <leader>rn <plug>(lsp-rename)
+nnoremap [g <plug>(lsp-previous-diagnostic)
+nnoremap ]g <plug>(lsp-next-diagnostic)
+nnoremap K <plug>(lsp-hover)
 
 " vim test
-nmap <silent> tn :TestNearest<CR>
-nmap <silent> tf :TestFile<CR>
-nmap <silent> ts :TestSuite<CR>
-nmap <silent> tl :TestLast<CR>
-nmap <silent> tg :TestVisit<CR>
+nnoremap <silent> tn :TestNearest<CR>
+nnoremap <silent> tf :TestFile<CR>
+nnoremap <silent> ts :TestSuite<CR>
+nnoremap <silent> tl :TestLast<CR>
+nnoremap <silent> tg :TestVisit<CR>
