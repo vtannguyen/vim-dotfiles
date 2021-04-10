@@ -34,4 +34,11 @@ autocmd FileType ruby noremap <Leader>m :w<CR>:!/usr/bin/env ruby -c %<CR>
 " If still want folding, install FastFold: https://github.com/Konfekt/FastFold
 autocmd FileType ruby set foldmethod=manual
 
+" Vimscript file settings ---------------------- {{{
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+
 let g:haskell_indent_if = 2

@@ -4,17 +4,18 @@
 call plug#begin('~/.vim/plugged')
 
 " ----------------
-" --- Movement ---
+" --- Movement --- {{{
 " ----------------
 " Easier vim motions. Try <Leader><Leader>w or <Leader><Leader>fo
 Plug 'Lokaltog/vim-easymotion'
 
 " Jump between pair of {}, [] or ()
 Plug 'vim-scripts/matchit.zip'
+" }}}
 
 
 " ------------------------
-" --- Vim Text Objects ---
+" --- Vim Text Objects --- {{{
 " ------------------------
 " Select and operate on indent text objects
 Plug 'michaeljsmith/vim-indent-object'
@@ -30,9 +31,11 @@ Plug 'wellle/targets.vim'
 
 " Required by vim-textobj-line and vim-textobj-entire
 Plug 'kana/vim-textobj-user'
+" }}}
+
 
 " -----------------------
-" --- UI enhancements ---
+" --- UI enhancements --- {{{
 " -----------------------
 " Ultimate Vim statusline utility
 Plug 'vim-airline/vim-airline'
@@ -46,20 +49,22 @@ Plug 'kien/rainbow_parentheses.vim'
 
 " Adds visualizations for vim marks
 Plug 'kshenoy/vim-signature'
+" }}}
 
 
 " ------------------------
-" --- Files management ---
+" --- Files management --- {{{
 " ------------------------
 " File explorer within Vim
 Plug 'preservim/nerdtree'
 
 " Use to fuzzy find file
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" }}}
 
 
 " --------------------
-" --- Autocomplete ---
+" --- Autocomplete --- {{{
 " --------------------
 " Allow tab completion when searching
 Plug 'vim-scripts/SearchComplete'
@@ -76,10 +81,11 @@ Plug 'tpope/vim-endwise'
 
 " Autocomplete
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
+" }}}
 
 
 " ----------------------------
-" --- Editing enhancements ---
+" --- Editing enhancements --- {{{
 " ----------------------------
 " Shortcuts to comment code. Use <Leader>cc or <Leader>c<Space>
 Plug 'tpope/vim-commentary'
@@ -102,26 +108,29 @@ Plug 'google/vim-glaive'
 Plug 'vim-scripts/ReplaceWithRegister'
 " Need to install wl-clipboard first
 Plug 'christoomey/vim-system-copy'
+" }}}
 
 
 " ----------------------
-" --- code structure ---
+" --- code structure --- {{{
 " ----------------------
 " Browse the tags of the current file and get an overview of its structure
 Plug 'preservim/tagbar'
+" }}}
 
 
 " ------------------------
-" --- Syntax highlight ---
+" --- Syntax highlight --- {{{
 " ------------------------
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'othree/html5.vim'
+" }}}
 
 
 " ---------------------------
-" --- General development ---
+" --- General development --- {{{
 " ---------------------------
 " Language Server Protocol
 "" Tested language server. To install run :LspInstallServer <server_name>
@@ -135,10 +144,11 @@ Plug 'vim-test/vim-test'
 
 " Debugger
 Plug 'puremourning/vimspector'
+" }}}
 
 
 " --------------------------
-" --- Python development ---
+" --- Python development --- {{{
 " --------------------------
 " class, function and docstring text object
 Plug 'jeetsukumaran/vim-pythonsense'
@@ -154,20 +164,22 @@ Plug 'tmhedberg/SimpylFold'
 
 " Python Read–Eval–Print Loop (REPL)
 Plug 'sillybun/vim-repl'
+" }}}
 
 
 " ------------------------------
-" --- Javascript development ---
+" --- Javascript development --- {{{
 " ------------------------------
 " Syntax highlight for jsx
 Plug 'maxmellon/vim-jsx-pretty'
 
 " Close tag for jsx
 Plug 'alvan/vim-closetag'
+" }}}
 
 
 " -------------------
-" --- Git for Vim ---
+" --- Git for Vim --- {{{
 " -------------------
 " Run git command in vim
 Plug 'tpope/vim-fugitive'
@@ -180,26 +192,29 @@ Plug 'airblade/vim-gitgutter'
 
 " Git branch with vim
 Plug 'idanarye/vim-merginal'
+" }}}
 
 
 " ----------------
-" ----- Tmux -----
+" ----- Tmux ----- {{{
 " ----------------
 " vim-tmux navigator
 Plug 'christoomey/vim-tmux-navigator'
 
 " run tmux command from vim termina
 Plug 'benmills/vimux'
+" }}}
 
 
 " -------------------
-" ---- Vim Note -----
+" ---- Vim Note ----- {{{
 " -------------------
 " Personal wiki for vim
 Plug 'vimwiki/vimwiki'
 
 " Markdown preview for vim
 Plug 'iamcco/markdown-preview.vim'
+" }}}
 
 
 " Initialize plugin system

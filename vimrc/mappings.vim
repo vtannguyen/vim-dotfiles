@@ -3,7 +3,7 @@
 " Map the leader key to ','
 let mapleader = ','
 
-" Autoclosing braces
+" Autoclosing braces ---- {{{
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
@@ -11,6 +11,7 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+" }}}
 
 " Mapping shortcut to remove highlight
 nnoremap <Leader><Space> :nohl<CR>
@@ -37,7 +38,7 @@ command! Q q
 " Something /must/ map to <Plug>IMAP_JumpForward in order to remap <C-j>
 map <C-SPACE> <Plug>IMAP_JumpForward
 
-" Make it easier to move between windows
+" Make it easier to move between windows ---- {{{
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
@@ -46,6 +47,7 @@ inoremap <C-H> <Esc><C-W>h
 inoremap <C-J> <Esc><C-W>j
 inoremap <C-K> <Esc><C-W>k
 inoremap <C-L> <Esc><C-W>l
+" }}}
 
 " easier mappings for resizing windows
 nnoremap <C-w>< 60<C-w><
@@ -65,7 +67,7 @@ vnoremap <Space> I<Space><Esc>gv
 inoremap <C-u> <C-o>u
 inoremap <C-y> <C-o><C-R>
 
-" Vimux
+" Vimux ---- {{{
 " Prompt for a command to run
 nnoremap <Leader>vp :VimuxPromptCommand<CR>
 
@@ -83,8 +85,9 @@ nnoremap <Leader>vs :VimuxInterruptRunner<CR>
 
 " Zoom the runner pane (use <bind-key> z to restore runner pane)
 nnoremap <Leader>vz :call VimuxZoomRunner()<CR>
+" }}}
 
-" Run script
+" Run script with Vimux ---- {{{
 nnoremap <silent><Leader>x <Esc>:RunScript<CR>
 " This function need to be put in a proper package
 command! RunScript call s:RunScript()
@@ -97,8 +100,9 @@ function! s:RunScript()
       echo "Script extension \"." . expand("%:e") "\" is currently not supported"
   endif
 endfunction
+" }}}
 
-" vim-lsp
+" vim-lsp ---- {{{
 nnoremap gd <plug>(lsp-definition)
 nnoremap gs <plug>(lsp-document-symbol-search)
 nnoremap gS <plug>(lsp-workspace-symbol-search)
@@ -109,10 +113,12 @@ nnoremap <leader>rn <plug>(lsp-rename)
 nnoremap [g <plug>(lsp-previous-diagnostic)
 nnoremap ]g <plug>(lsp-next-diagnostic)
 nnoremap K <plug>(lsp-hover)
+" }}}
 
-" vim test
+" vim test ---- {{{
 nnoremap <silent> tn :TestNearest<CR>
 nnoremap <silent> tf :TestFile<CR>
 nnoremap <silent> ts :TestSuite<CR>
 nnoremap <silent> tl :TestLast<CR>
 nnoremap <silent> tg :TestVisit<CR>
+" }}}
