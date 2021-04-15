@@ -103,16 +103,16 @@ endfunction
 " }}}
 
 " vim-lsp ---- {{{
-nnoremap gd <plug>(lsp-definition)
-nnoremap gs <plug>(lsp-document-symbol-search)
-nnoremap gS <plug>(lsp-workspace-symbol-search)
-nnoremap <leader>gr <plug>(lsp-references)
-nnoremap gi <plug>(lsp-implementation)
-nnoremap <leader>gt <plug>(lsp-type-definition)
-nnoremap <leader>rn <plug>(lsp-rename)
-nnoremap [g <plug>(lsp-previous-diagnostic)
-nnoremap ]g <plug>(lsp-next-diagnostic)
-nnoremap K <plug>(lsp-hover)
+nnoremap gd :LspDefinition<CR>
+nnoremap gs :LspDocumentSymbol<CR>
+nnoremap gS :LspWorkspaceSymbol<CR>
+nnoremap <leader>gr :LspReferences<CR>
+nnoremap gi :LspImplementation<CR>
+nnoremap <leader>gt :LspTypeDefinition<CR>
+nnoremap <leader>rn :LspRename<CR>
+nnoremap [g :LspPreviousDiagnostic<CR>
+nnoremap ]g :LspNextDiagnostic<CR>
+nnoremap K :LspHover<CR>
 " }}}
 
 " vim test ---- {{{
