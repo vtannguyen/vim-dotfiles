@@ -8,14 +8,24 @@ This intallation guide is for Fedora 30
 
 
 * Then install wl-clipboard for system clipboard copy and paste
-`sudo dnf install wl-clipboard`
+```sh
+sudo dnf install wl-clipboard
+```
  
-* Next clone the repo to dir ~/.vim
-`git clone https://github.com/vtannguyen/vim-dotfiles.git ~/.vim`
+* Install vim and download the configurations
+```sh
+sudo dnf install -y vim
+git clone https://github.com/vtannguyen/vim-dotfiles.git ~/.vim && cp ~/.vim/.vimrc ~/
+```
 
-* Copy file .vimrc out
-* Finally open vim and install all plugins by typing `:PluginInstall`
-* Note: the plugin `YouCompleteMe` and `vim-pydocstring` require manual installation
+* Open vim and install all plugins by typing `:PlugInstall`
+
+* To finish installing the plugin `YouCompleteMe`, please run the following commands:
+```sh
+    cd ~/.vim/plugged/YouCompleteMe
+    sudo dnf install -y cmake gcc-c++ make python3-devel
+    python3 install.py --clangd-completer
+```
 
 Enjoy!!!
 
