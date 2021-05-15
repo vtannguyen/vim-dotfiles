@@ -144,6 +144,7 @@ Plug 'vim-test/vim-test'
 
 " Debugger
 Plug 'puremourning/vimspector'
+Plug 'vtannguyen/vim-test-debugger'
 " }}}
 
 
