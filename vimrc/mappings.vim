@@ -122,3 +122,29 @@ nnoremap <silent> ts :TestSuite<CR>
 nnoremap <silent> tl :TestLast<CR>
 nnoremap <silent> tg :TestVisit<CR>
 " }}}
+
+inoremap <silent> <C-j> <C-n>
+inoremap <silent> <C-k> <C-p>
+
+" Save/restore vim session {{{
+fu! SaveSess()
+    execute 'mksession! ' . getcwd() . '/.session.vim'
+endfunction
+
+fu! RestoreSess()
+if filereadable(getcwd() . '/.session.vim')
+    execute 'so ' . getcwd() . '/.session.vim'
+    execute 'so ~/.vim/vimrc/looks.vim'
+    if bufexists(1)
+        for l in range(1, bufnr('$'))
+            if bufwinnr(l) == -1
+                exec 'sbuffer ' . l
+            endif
+        endfor
+    endif
+endif
+endfunction
+
+autocmd VimLeave * call SaveSess()
+autocmd VimEnter * nested call RestoreSess()
+" }}}
