@@ -22,6 +22,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " ------------------------------
 let g:NERDTreeWinPos = 'right'
 map <Leader>n :NERDTreeFind<cr>
+let NERDTreeIgnore = ['\.swp$']
 " enable line numbers
 let NERDTreeShowLineNumbers=1
 " make sure relative line numbers are used
