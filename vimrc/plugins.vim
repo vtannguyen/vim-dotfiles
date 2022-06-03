@@ -81,6 +81,8 @@ Plug 'tpope/vim-endwise'
 
 " Autocomplete
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 " }}}
 
 
@@ -116,6 +118,9 @@ Plug 'christoomey/vim-system-copy'
 " ----------------------
 " Browse the tags of the current file and get an overview of its structure
 Plug 'preservim/tagbar'
+
+" Fold yaml file
+Plug 'pedrohdz/vim-yaml-folds'
 " }}}
 
 
@@ -138,6 +143,7 @@ Plug 'othree/html5.vim'
 ""      Javascript -> typescript-language-server
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+Plug 'rhysd/vim-lsp-ale'
 
 " Test
 Plug 'vim-test/vim-test'
@@ -223,3 +229,4 @@ call plug#end()
 call glaive#Install()
 " Config code formartter prefix
 Glaive codefmt plugin[mappings]='<leader>f'
+Glaive codefmt shfmt_options=`['-i', '4', '-sr', '-ci', '-fn']`
