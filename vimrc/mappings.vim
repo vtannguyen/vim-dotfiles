@@ -28,6 +28,12 @@ nnoremap gw :w<CR>
 " Easier way to quit file
 nnoremap gq :q<CR>
 
+" Easier way to save all buffers
+nnoremap gwa :wa<CR>
+
+" Easier way to quit all windows
+nnoremap gqa :qa<CR>
+
 " For those pesky :W errors...
 command! W w
 command! Wq wq
