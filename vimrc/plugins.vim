@@ -59,7 +59,8 @@ Plug 'kshenoy/vim-signature'
 Plug 'preservim/nerdtree'
 
 " Use to fuzzy find file
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " }}}
 
 
