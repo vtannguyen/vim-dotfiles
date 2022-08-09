@@ -81,7 +81,6 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-endwise'
 
 " Autocomplete
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 " }}}
@@ -96,9 +95,6 @@ Plug 'tpope/vim-commentary'
 " Text filtering and alignment
 Plug 'godlygeek/tabular'
 
-" Break or join lines
-Plug 'AndrewRadev/splitjoin.vim'
-"
 " Select and operate on surrounding symbols
 Plug 'tpope/vim-surround'
 
@@ -165,7 +161,7 @@ Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'dense-analysis/ale'
 
 " Auto generate docstring
-Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
 " Python code folding
 Plug 'tmhedberg/SimpylFold'
@@ -209,7 +205,7 @@ Plug 'idanarye/vim-merginal'
 " vim-tmux navigator
 Plug 'christoomey/vim-tmux-navigator'
 
-" run tmux command from vim termina
+" run tmux command from vim terminal
 Plug 'benmills/vimux'
 " }}}
 
