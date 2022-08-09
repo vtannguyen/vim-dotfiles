@@ -98,6 +98,9 @@ Plug 'godlygeek/tabular'
 " Select and operate on surrounding symbols
 Plug 'tpope/vim-surround'
 
+" Insert or delete brackets, parens, quotes in pair.
+Plug 'jiangmiao/auto-pairs'
+
 " Code formating.
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'

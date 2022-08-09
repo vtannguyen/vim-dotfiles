@@ -3,16 +3,6 @@
 " Map the leader key to ','
 let mapleader = ','
 
-" Autoclosing braces ---- {{{
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-" }}}
-
 " Mapping shortcut to remove highlight
 nnoremap <Leader><Space> :nohl<CR>
 
