@@ -112,7 +112,7 @@ nnoremap K :LspHover<CR>
 " }}}
 
 " vim test ---- {{{
-nnoremap <silent> tn :TestNearest<CR>
+nnoremap <silent> tn :TestNearest --verbose<CR>
 nnoremap <silent> tf :TestFile<CR>
 nnoremap <silent> ts :TestSuite<CR>
 nnoremap <silent> tl :TestLast<CR>
