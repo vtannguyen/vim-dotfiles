@@ -120,8 +120,20 @@ let g:fzf_layout = {'down': '30%'}
 " --------------------------------
 " ----- vim-codefmt settings ----- {{{
 " --------------------------------
-autocmd FileType html,typescript,javascript,css,less,scss,json,yaml,markdown,vue let b:codefmt_formatter = 'prettier'
-autocmd FileType python let b:codefmt_formatter = 'yapf'
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,arduino AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer black
+  autocmd FileType rust AutoFormatBuffer rustfmt
+  autocmd FileType vue AutoFormatBuffer prettier
+  autocmd FileType javascript AutoFormatBuffer prettier
+  autocmd FileType swift AutoFormatBuffer swift-format
+augroup END
 " }}}
 
 

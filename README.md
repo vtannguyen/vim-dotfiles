@@ -21,14 +21,12 @@ sudo dnf install -y vim
 git clone https://github.com/vtannguyen/vim-dotfiles.git ~/.vim && cp ~/.vim/.vimrc ~/
 ```
 
-* Open vim and install all plugins by typing `:PlugInstall`
-
-* To finish installing the plugin `YouCompleteMe`, please run the following commands:
+* Install code formatters
 ```sh
-    cd ~/.vim/plugged/YouCompleteMe
-    sudo dnf install -y cmake gcc-c++ make python3-devel
-    python3 install.py --clangd-completer
+./install_formatters.sh
 ```
+
+* Open vim and install all plugins by typing `:PlugInstall`
 
 Enjoy!!!
 
