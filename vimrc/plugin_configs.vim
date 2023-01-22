@@ -184,3 +184,10 @@ let g:vimspector_enable_mappings = 'HUMAN'
 " for normal mode - the word under the cursor
 nmap <Leader>di <Plug>VimspectorBalloonEval
 " }}}
+
+" -----------------------
+" ----- ale setting ----- {{{
+" -----------------------
+" not show error at the end of the line
+let g:ale_virtualtext_cursor = 0
+" }}}
