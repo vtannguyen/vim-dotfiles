@@ -24,6 +24,9 @@ nnoremap gwa :wa<CR>
 " Easier way to quit all windows
 nnoremap gqa :qa<CR>
 
+" Search for file using fuzzy finder
+nnoremap <C-f> :FZF<CR>
+
 " For those pesky :W errors...
 command! W w
 command! Wq wq
