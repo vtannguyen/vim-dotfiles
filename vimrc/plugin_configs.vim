@@ -191,3 +191,10 @@ nmap <Leader>di <Plug>VimspectorBalloonEval
 " not show error at the end of the line
 let g:ale_virtualtext_cursor = 0
 " }}}
+
+" -------------------------
+" ----- isort setting ----- {{{
+" -------------------------
+" sort import before saving the file
+autocmd BufWritePre *.py silent call isort#Isort(0, line('$'), v:null, v:false)
+" }}}

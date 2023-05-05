@@ -138,9 +138,9 @@ Plug 'othree/html5.vim'
 " --- General development --- {{{
 " ---------------------------
 " Language Server Protocol
-"" Tested language server. To install run :LspInstallServer <server_name>
-""      Python -> jedi-language-server
-""      Javascript -> typescript-language-server
+" Tested language server. To install run :LspInstallServer <server_name>
+"      Python -> jedi-language-server
+"      Javascript -> typescript-language-server
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'rhysd/vim-lsp-ale'
@@ -168,6 +168,9 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
 " Python code folding
 Plug 'tmhedberg/SimpylFold'
+
+" Sort python imports
+Plug 'brentyi/isort.vim'
 
 " Python Read–Eval–Print Loop (REPL)
 Plug 'sillybun/vim-repl'
