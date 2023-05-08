@@ -196,5 +196,11 @@ let g:ale_virtualtext_cursor = 0
 " ----- isort setting ----- {{{
 " -------------------------
 " sort import before saving the file
-autocmd BufWritePre *.py silent call isort#Isort(0, line('$'), v:null, v:false)
+function! FormatImportPy()
+   " function to preserve cursor position after formatting imports
+   let save_pos = getpos(".")
+   silent call isort#Isort(0, line('$'), function('codefmt#FormatBuffer'), v:false)
+   call setpos(".", save_pos)
+endfunction
+autocmd BufWritePre *.py silent call FormatImportPy()
 " }}}
