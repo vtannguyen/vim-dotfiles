@@ -190,6 +190,8 @@ nmap <Leader>di <Plug>VimspectorBalloonEval
 " -----------------------
 " not show error at the end of the line
 let g:ale_virtualtext_cursor = 0
+highlight ALEError cterm=underline 
+highlight ALEWarning cterm=underline
 " }}}
 
 " -------------------------
