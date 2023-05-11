@@ -205,4 +205,5 @@ function! FormatImportPy()
    call setpos(".", save_pos)
 endfunction
 autocmd BufWritePre *.py silent call FormatImportPy()
+autocmd BufWritePost *.py silent execute "e"
 " }}}
