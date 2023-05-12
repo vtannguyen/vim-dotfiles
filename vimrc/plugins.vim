@@ -169,9 +169,6 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 " Python code folding
 Plug 'tmhedberg/SimpylFold'
 
-" Sort python imports
-Plug 'brentyi/isort.vim'
-
 " Python Read–Eval–Print Loop (REPL)
 Plug 'sillybun/vim-repl'
 " }}}
