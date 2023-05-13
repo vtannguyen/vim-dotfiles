@@ -108,6 +108,7 @@ Plug 'google/vim-glaive'
 
 " Copy and paste
 Plug 'vim-scripts/ReplaceWithRegister'
+
 " Need to install wl-clipboard first
 Plug 'christoomey/vim-system-copy'
 " }}}
@@ -164,13 +165,10 @@ Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'dense-analysis/ale'
 
 " Auto generate docstring
-Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+Plug 'heavenshell/vim-pydocstring', {'do': 'make install', 'for': 'python'}
 
 " Python code folding
 Plug 'tmhedberg/SimpylFold'
-
-" Python Read–Eval–Print Loop (REPL)
-Plug 'sillybun/vim-repl'
 
 " Clean unused imports
 Plug 'tenfyzhong/autoflake.vim', {'do': 'pip install autoflake'}
