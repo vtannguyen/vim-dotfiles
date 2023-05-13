@@ -171,6 +171,9 @@ Plug 'tmhedberg/SimpylFold'
 
 " Python Read–Eval–Print Loop (REPL)
 Plug 'sillybun/vim-repl'
+
+" Clean unused imports
+Plug 'tenfyzhong/autoflake.vim', {'do': 'pip install autoflake'}
 " }}}
 
 

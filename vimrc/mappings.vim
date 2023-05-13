@@ -124,5 +124,9 @@ nnoremap <silent> tl :TestLast<CR>
 nnoremap <silent> tg :TestVisit<CR>
 " }}}
 
+" vim autoflake ---- {{{
+nnoremap <silent> <leader>ci :Autoflake<CR>
+" }}}
+
 inoremap <silent> <C-j> <C-n>
 inoremap <silent> <C-k> <C-p>
