@@ -138,31 +138,6 @@ autocmd BufWritePre *.py silent execute 'FormatCode isort'
 " }}}
 
 
-" --------------------------------
-" ----- vim-repl settings ----- {{{
-" --------------------------------
-let g:repl_program = {
-            \   'python': 'python',
-            \   'bash': 'bash',
-            \   'default': 'python',
-            \   'r': 'R',
-            \   'lua': 'lua',
-            \   'vim': 'vim -e',
-            \   }
-" let g:repl_predefine_python = {
-"             \   'numpy': 'import numpy as np',
-"             \   'matplotlib': 'from matplotlib import pyplot as plt'
-"             \   }
-let g:repl_cursor_down = 1
-let g:repl_python_automerge = 1
-let g:repl_ipython_version = '7'
-let g:repl_output_copy_to_register = "t"
-nnoremap <leader>re :REPLToggle<Cr>
-nnoremap <leader>we :REPLSendSession<Cr>
-let g:repl_position = 3
-" }}}
-
-
 " ----------------------------
 " ----- SnipMate Setting ----- {{{
 " ----------------------------
