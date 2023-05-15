@@ -231,3 +231,7 @@ call glaive#Install()
 " Config code formartter prefix
 Glaive codefmt plugin[mappings]='<leader>f'
 Glaive codefmt shfmt_options=`['-i', '4', '-sr', '-ci', '-fn']`
+Glaive codefmt black_executable=`$HOME . "/.vim/code-formatters/venv/bin/black"`
+Glaive codefmt js_beautify_executable=`$HOME . "/.vim/code-formatters/node_modules/.bin/js-beautify"`
+Glaive codefmt isort_executable=`$HOME . "/.vim/code-formatters/venv/bin/isort"`
+Glaive codefmt prettier_executable=`$HOME . "/.vim/code-formatters/node_modules/.bin/prettier"`
