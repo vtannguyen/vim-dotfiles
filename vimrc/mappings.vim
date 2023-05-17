@@ -24,6 +24,9 @@ nnoremap gwa :wa<CR>
 " Easier way to quit all windows
 nnoremap gqa :qa<CR>
 
+" Copy the current buffer's path to the clipboard
+nmap cb :let @" = expand("%")<CR>
+
 " Search for file using fuzzy finder
 nnoremap <C-f> :FZF<CR>
 
@@ -125,7 +128,7 @@ nnoremap <silent> tg :TestVisit<CR>
 " }}}
 
 " vim autoflake ---- {{{
-nnoremap <silent> <leader>cu :Autoflake<CR>
+nnoremap <silent> <leader>cu :Autoflake --remove-all-unused-imports<CR>
 " }}}
 
 inoremap <silent> <C-j> <C-n>
