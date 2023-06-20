@@ -30,6 +30,9 @@ nmap cb :let @" = expand("%")<CR>
 " Search for file using fuzzy finder
 nnoremap <C-f> :FZF<CR>
 
+" Search for buffer using fuzzy finder
+nnoremap <leader>b :Buffers<CR>
+
 " For those pesky :W errors...
 command! W w
 command! Wq wq
