@@ -136,3 +136,13 @@ nnoremap <silent> <leader>cu :Autoflake --remove-all-unused-imports<CR>
 
 inoremap <silent> <C-j> <C-n>
 inoremap <silent> <C-k> <C-p>
+
+" vim asyncomplete ---- {{{
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+" }}}
+
+" vim SnipMate ---- {{{
+imap <C-l> <Plug>snipMateNextOrTrigger
+" }}}
