@@ -146,3 +146,22 @@ inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 " vim SnipMate ---- {{{
 imap <C-l> <Plug>snipMateNextOrTrigger
 " }}}
+
+" netrw ---- {{{
+function! NetrwMapping()
+  nmap <silent> <buffer> <c-h> :TmuxNavigateLeft<CR>
+  nmap <silent> <buffer> <c-j> :TmuxNavigateDown<CR>
+  nmap <silent> <buffer> <c-k> :TmuxNavigateUp<CR>
+  nmap <silent> <buffer> <c-l> :TmuxNavigateRight<CR>
+endfunction
+
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+
+let g:netrw_keepdir = 0
+let g:netrw_localcopydircmd = 'cp -r'
+let g:netrw_liststyle = 3
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+" }}}

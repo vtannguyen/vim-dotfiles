@@ -58,6 +58,9 @@ Plug 'kshenoy/vim-signature'
 " File explorer within Vim
 Plug 'preservim/nerdtree'
 
+" Enhance vim netrw
+Plug 'tpope/vim-vinegar'
+
 " Use to fuzzy find file
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
