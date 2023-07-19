@@ -55,9 +55,6 @@ Plug 'kshenoy/vim-signature'
 " ------------------------
 " --- Files management --- {{{
 " ------------------------
-" File explorer within Vim
-Plug 'preservim/nerdtree'
-
 " Enhance vim netrw
 Plug 'tpope/vim-vinegar'
 
@@ -194,9 +191,6 @@ Plug 'alvan/vim-closetag'
 " -------------------
 " Run git command in vim
 Plug 'tpope/vim-fugitive'
-
-" Show git status flags in Nerdtree
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Show git diff
 Plug 'airblade/vim-gitgutter'

@@ -7,38 +7,6 @@ let g:VimuxOrientation = "h"
 " }}}
 
 
-" ------------------------------
-" ----- NERD_Tree settings ----- {{{
-" ------------------------------
-let g:NERDTreeWinPos = 'right'
-map <Leader>n :NERDTreeFind<cr>
-let NERDTreeIgnore = ['\.swp$']
-" enable line numbers
-let NERDTreeShowLineNumbers=1
-" make sure relative line numbers are used
-autocmd FileType nerdtree setlocal relativenumber
-let g:NERDTreeShowBookmarks = 1
-let g:NERDTreeShowHidden = 1
-let NERDTreeWinSize = 40
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "~",
-    \ "Staged"    : "+",
-    \ "Untracked" : "*",
-    \ "Renamed"   : "»",
-    \ "Unmerged"  : "=",
-    \ "Deleted"   : "-",
-    \ "Dirty"     : "×",
-    \ "Clean"     : "ø",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
-" }}}
-
-
 " ---------------------------
 " ----- Tagbar settings ----- {{{
 " ---------------------------
