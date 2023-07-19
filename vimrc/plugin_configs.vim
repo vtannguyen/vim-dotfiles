@@ -121,14 +121,6 @@ let test#python#runner = 'pytest'
 " }}}
 
 
-" ------------------------------
-" ----- vimspector setting ----- {{{
-" ------------------------------
-let g:vimspector_enable_mappings = 'HUMAN'
-" for normal mode - the word under the cursor
-nmap <Leader>di <Plug>VimspectorBalloonEval
-" }}}
-
 " -----------------------
 " ----- ale setting ----- {{{
 " -----------------------

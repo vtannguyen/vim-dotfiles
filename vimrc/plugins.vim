@@ -67,9 +67,6 @@ Plug 'junegunn/fzf.vim'
 " --------------------
 " --- Autocomplete --- {{{
 " --------------------
-" Allow tab completion when searching
-Plug 'vim-scripts/SearchComplete'
-
 " Create boilerplates
 Plug 'garbas/vim-snipmate'
 " snipMate dependences
@@ -148,10 +145,6 @@ Plug 'rhysd/vim-lsp-ale'
 
 " Test
 Plug 'vim-test/vim-test'
-
-" Debugger
-Plug 'puremourning/vimspector'
-Plug 'vtannguyen/vim-test-debugger'
 " }}}
 
 
@@ -191,12 +184,6 @@ Plug 'alvan/vim-closetag'
 " -------------------
 " Run git command in vim
 Plug 'tpope/vim-fugitive'
-
-" Show git diff
-Plug 'airblade/vim-gitgutter'
-
-" Git branch with vim
-Plug 'idanarye/vim-merginal'
 " }}}
 
 
