@@ -148,6 +148,22 @@ imap <C-l> <Plug>snipMateNextOrTrigger
 " }}}
 
 " netrw ---- {{{
+" Toggle netrw
+function! ToggleLExplorer()
+  if exists("t:expl_buf_num")
+      let expl_win_num = bufwinnr(t:expl_buf_num)
+      if expl_win_num != -1
+          exec expl_win_num . 'wincmd w'
+          close
+      endif
+      unlet t:expl_buf_num
+  else
+      Lexplore!
+      let t:expl_buf_num = bufnr("%")
+  endif
+endfunction
+nnoremap <leader>e :call ToggleLExplorer()<CR>
+
 function! NetrwMapping()
   nmap <silent> <buffer> <c-h> :TmuxNavigateLeft<CR>
   nmap <silent> <buffer> <c-j> :TmuxNavigateDown<CR>
@@ -160,6 +176,7 @@ augroup netrw_mapping
   autocmd filetype netrw call NetrwMapping()
 augroup END
 
+let g:netrw_altv = 0
 let g:netrw_localcopydircmd = 'cp -r'
 let g:netrw_liststyle = 3
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
