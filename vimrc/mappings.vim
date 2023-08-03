@@ -158,7 +158,7 @@ function! ToggleLExplorer()
       endif
       unlet t:expl_buf_num
   else
-      Lexplore!
+      40Lexplore!
       let t:expl_buf_num = bufnr("%")
   endif
 endfunction
