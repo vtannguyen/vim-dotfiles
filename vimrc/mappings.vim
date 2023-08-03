@@ -184,4 +184,5 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " vim fugitive ---- {{{
 nnoremap <leader>gg :G<CR>
+nnoremap <leader>gp :Git push<CR>
 " }}}
