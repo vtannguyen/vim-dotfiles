@@ -184,6 +184,9 @@ Plug 'alvan/vim-closetag'
 " -------------------
 " Run git command in vim
 Plug 'tpope/vim-fugitive'
+
+" Shows a git diff in the sign column
+Plug 'airblade/vim-gitgutter'
 " }}}
 
 
