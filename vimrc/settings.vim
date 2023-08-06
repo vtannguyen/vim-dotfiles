@@ -54,3 +54,4 @@ set winheight=24
 set winwidth=85
 set wrap
 set wrapmargin=2
+set diffopt=vertical
