@@ -175,11 +175,6 @@ augroup netrw_mapping
   autocmd!
   autocmd filetype netrw call NetrwMapping()
 augroup END
-
-let g:netrw_altv = 0
-let g:netrw_localcopydircmd = 'cp -r'
-let g:netrw_liststyle = 3
-let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 " }}}
 
 " vim fugitive ---- {{{

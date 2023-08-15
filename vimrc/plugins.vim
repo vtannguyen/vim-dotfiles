@@ -55,9 +55,6 @@ Plug 'kshenoy/vim-signature'
 " ------------------------
 " --- Files management --- {{{
 " ------------------------
-" Enhance vim netrw
-Plug 'tpope/vim-vinegar'
-
 " Use to fuzzy find file
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

@@ -129,3 +129,15 @@ let g:ale_virtualtext_cursor = 0
 highlight ALEError cterm=underline 
 highlight ALEWarning cterm=underline
 " }}}
+
+
+" -------------------------
+" ----- netrw setting ----- {{{
+" -------------------------
+let g:netrw_banner=0
+let g:netrw_altv = 0
+let g:netrw_localcopydircmd = 'cp -r'
+let g:netrw_liststyle = 3
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+let g:netrw_list_hide= '.*\.swp$'
+" }}}
