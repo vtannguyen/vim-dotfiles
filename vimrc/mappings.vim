@@ -149,20 +149,7 @@ imap <C-l> <Plug>snipMateNextOrTrigger
 
 " netrw ---- {{{
 " Toggle netrw
-function! ToggleLExplorer()
-  if exists("t:expl_buf_num")
-      let expl_win_num = bufwinnr(t:expl_buf_num)
-      if expl_win_num != -1
-          exec expl_win_num . 'wincmd w'
-          close
-      endif
-      unlet t:expl_buf_num
-  else
-      40Lexplore!
-      let t:expl_buf_num = bufnr("%")
-  endif
-endfunction
-nnoremap <leader>e :call ToggleLExplorer()<CR>
+nnoremap <leader>e :40Lexplore!<CR>
 
 function! NetrwMapping()
   nmap <silent> <buffer> <c-h> :TmuxNavigateLeft<CR>
