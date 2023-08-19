@@ -148,8 +148,7 @@ imap <C-l> <Plug>snipMateNextOrTrigger
 " }}}
 
 " netrw ---- {{{
-" Toggle netrw
-nnoremap <leader>e :40Lexplore!<CR>
+nnoremap <leader>e :Rexplore<CR>
 
 function! NetrwMapping()
   nmap <silent> <buffer> <c-h> :TmuxNavigateLeft<CR>
@@ -161,6 +160,7 @@ endfunction
 augroup netrw_mapping
   autocmd!
   autocmd filetype netrw call NetrwMapping()
+  autocmd VimEnter * if expand("%") == "" | edit . | endif
 augroup END
 " }}}
 
