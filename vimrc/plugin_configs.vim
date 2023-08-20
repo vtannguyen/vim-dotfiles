@@ -141,3 +141,11 @@ let g:netrw_liststyle = 3
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 let g:netrw_list_hide= '.*\.swp$'
 " }}}
+
+
+" ------------------------------
+" ----- Easymotion setting ----- {{{
+" ------------------------------
+map ; <Plug>(easymotion-prefix)
+let g:EasyMotion_smartcase = 1
+" }}}

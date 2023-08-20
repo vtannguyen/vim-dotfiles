@@ -109,7 +109,7 @@ Plug 'christoomey/vim-system-copy'
 
 
 " ----------------------
-" --- code structure --- {{{
+" --- Code structure --- {{{
 " ----------------------
 " Browse the tags of the current file and get an overview of its structure
 Plug 'preservim/tagbar'

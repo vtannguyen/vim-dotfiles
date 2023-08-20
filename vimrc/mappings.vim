@@ -168,3 +168,11 @@ augroup END
 nnoremap <leader>gg :G<CR>
 nnoremap <leader>gp :Git push<CR>
 " }}}
+
+" vim easymotion ---- {{{
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to word
+nmap ;w <Plug>(easymotion-overwin-w)
+" }}}
