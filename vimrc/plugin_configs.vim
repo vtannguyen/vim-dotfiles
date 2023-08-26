@@ -118,6 +118,12 @@ let g:snipMate = { 'snippet_version' : 1 }
 " ----------------------------
 let test#strategy = "vimux"
 let test#python#runner = 'pytest'
+let test#python#pytest#options = {
+    \ 'nearest': '--exitfirst --last-failed',
+    \ 'file': '--exitfirst --last-failed',
+    \ 'class': '--exitfirst --last-failed',
+    \ 'suite': '--exitfirst --last-failed',
+\}
 " }}}
 
 
