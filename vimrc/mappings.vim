@@ -169,6 +169,13 @@ nnoremap <leader>gg :G<CR>
 nnoremap <leader>gp :Git push<CR>
 " }}}
 
+" vim ale ---- {{{
+nnoremap ]a :ALENextWrap<CR>
+nnoremap [a :ALEPreviousWrap<CR>
+nnoremap ]A :ALELast<CR>
+nnoremap [A :ALEFirst<CR>
+" }}}
+
 " vim easymotion ---- {{{
 " s{char}{char} to move to {char}{char}
 nmap s <Plug>(easymotion-overwin-f2)
