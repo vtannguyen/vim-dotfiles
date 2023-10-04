@@ -28,7 +28,7 @@ nnoremap gqa :qa<CR>
 nmap cb :let @" = expand("%")<CR>
 
 " Search for file using fuzzy finder
-nnoremap <C-f> :FZF<CR>
+nnoremap <leader>f :FZF<CR>
 
 " Search for buffer using fuzzy finder
 nnoremap <leader>b :Buffers<CR>
@@ -71,6 +71,9 @@ vnoremap <Space> I<Space><Esc>gv
 " Undo and redo in insert mode
 inoremap <C-u> <C-o>u
 inoremap <C-y> <C-o><C-R>
+
+" Remap keys to increase number to avoid conflict with tmux
+nnoremap <C-i> <C-a>
 
 " Vimux ---- {{{
 " Prompt for a command to run
