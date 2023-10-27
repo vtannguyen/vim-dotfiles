@@ -72,9 +72,6 @@ vnoremap <Space> I<Space><Esc>gv
 inoremap <C-u> <C-o>u
 inoremap <C-y> <C-o><C-R>
 
-" Remap keys to increase number to avoid conflict with tmux
-nnoremap <C-i> <C-a>
-
 " Vimux ---- {{{
 " Prompt for a command to run
 nnoremap <Leader>vp :VimuxPromptCommand<CR>
