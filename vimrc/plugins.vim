@@ -86,6 +86,9 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 " Shortcuts to comment code. Use <Leader>cc or <Leader>c<Space>
 Plug 'tpope/vim-commentary'
 
+" Abbreviation, Substitution and Coercion text
+Plug 'tpope/vim-abolish'
+
 " Text filtering and alignment
 Plug 'godlygeek/tabular'
 
