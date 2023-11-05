@@ -33,6 +33,9 @@ nnoremap <C-f> :FZF<CR>
 " Search for buffer using fuzzy finder
 nnoremap <leader>b :Buffers<CR>
 
+" Increase number by 1
+nnoremap <C-b> <C-a>
+
 " For those pesky :W errors...
 command! W w
 command! Wq wq
