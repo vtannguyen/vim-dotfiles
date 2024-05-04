@@ -219,7 +219,7 @@ Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 call glaive#Install()
 " Config code formartter prefix
-Glaive codefmt plugin[mappings]='<leader>f'
+Glaive codefmt plugin[mappings]='<leader>F'
 Glaive codefmt shfmt_options=`['-i', '4', '-sr', '-ci', '-fn']`
 Glaive codefmt black_executable=`$HOME . "/.vim/code-formatters/venv/bin/black"`
 Glaive codefmt js_beautify_executable=`$HOME . "/.vim/code-formatters/node_modules/.bin/js-beautify"`
