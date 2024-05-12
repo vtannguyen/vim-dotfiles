@@ -12,6 +12,9 @@ nnoremap <Leader>a :Tabularize /
 nnoremap gb :bnext<CR>
 nnoremap gB :bprev<CR>
 
+" Easier way to add semicolon at the end of line
+inoremap ;; <C-o>A;
+
 " Easier way to save files
 nnoremap gw :w<CR>
 
@@ -126,7 +129,7 @@ nnoremap K :LspHover<CR>
 " }}}
 
 " vim test ---- {{{
-nnoremap <silent> tn :TestNearest --verbose<CR>
+nnoremap <silent> tn :TestNearest<CR>
 nnoremap <silent> tf :TestFile<CR>
 nnoremap <silent> ts :TestSuite<CR>
 nnoremap <silent> tl :TestLast<CR>
