@@ -42,7 +42,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " taken
 set tabstop=4
 set tags=./tags;/
 set textwidth=78
-set timeoutlen=4000                    " Time to wait after ESC
+set timeoutlen=600                    " Time to wait after ESC
 set ttimeoutlen=50
 set viminfo='10,\"100,:20,%,n~/.viminfo    " Use viminfo
 set visualbell
