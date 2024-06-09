@@ -77,7 +77,10 @@ Plug 'tpope/vim-endwise'
 " Autocomplete
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-" }}}
+
+" Creating template files
+Plug 'aperezdc/vim-template'
+"" }}}
 
 
 " ----------------------------

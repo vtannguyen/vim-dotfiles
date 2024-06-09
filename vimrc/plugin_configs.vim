@@ -155,3 +155,11 @@ let g:netrw_list_hide= '.*\.swp$'
 map ; <Plug>(easymotion-prefix)
 let g:EasyMotion_smartcase = 1
 " }}}
+
+
+" ------------------------------
+" ----- Vim-template setting ----- {{{
+" ------------------------------
+let g:templates_directory = '~/.vim/templates'
+let g:username = 'Tan Nguyen'
+" }}}
