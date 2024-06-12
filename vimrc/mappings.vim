@@ -197,3 +197,7 @@ nmap s <Plug>(easymotion-overwin-f2)
 " Move to word
 nmap ;w <Plug>(easymotion-overwin-w)
 " }}}
+
+" NerdTree ---- {{{
+nnoremap <C-n> :NERDTreeToggle<CR>
+" }}}
