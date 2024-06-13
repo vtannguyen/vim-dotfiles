@@ -31,7 +31,7 @@ nnoremap gqa :qa<CR>
 nmap cb :let @" = expand("%")<CR>
 
 " Search for file using fuzzy finder
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>f :Files<CR>
 
 " Search for buffer using fuzzy finder
 nnoremap <leader>b :Buffers<CR>
