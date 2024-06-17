@@ -14,13 +14,14 @@ test: venv
 
 # Install requirements
 install: venv
-    .venv/bin/pip install -r dev-requirements.txt
+    .venv/bin/pip install -r requirements.txt
+    [ ! -f dev-requirements.txt ] || .venv/bin/pip install -r dev-requirements.txt
 
 # Generate hashed requirement files
 requirements: venv
     .venv/bin/pip install pip-tools
     .venv/bin/pip-compile --generate-hashes requirements.in
-    .venv/bin/pip-compile --generate-hashes dev-requirements.in
+    [ ! -f dev-requirements.in ] || .venv/bin/pip-compile --generate-hashes dev-requirements.in
 
 # Tidy up local environment
 clean:
