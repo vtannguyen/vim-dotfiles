@@ -53,3 +53,15 @@ set winwidth=85
 set wrap
 set wrapmargin=2
 set diffopt=vertical
+
+" Easier to open large files
+augroup LargeFile
+        let g:large_file = 1048576 " 1MB
+        au BufReadPre *
+                \ let f=expand("<afile>") |
+                \ if getfsize(f) > g:large_file |
+                        \ setlocal noswapfile undolevels=5 eventignore=BufWritePre,BufWrite,BufRead,BufReadPost |
+                \ else |
+                        \ setlocal eventignore= |
+                \ endif
+augroup END
