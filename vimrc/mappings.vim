@@ -192,10 +192,10 @@ nnoremap [A :ALEFirst<CR>
 
 " vim easymotion ---- {{{
 " s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-s2)
 
 " Move to word
-nmap ;w <Plug>(easymotion-overwin-w)
+nmap ;w <Plug>(easymotion-w)
 " }}}
 
 " NerdTree ---- {{{
