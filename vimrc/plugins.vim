@@ -155,6 +155,9 @@ Plug 'rhysd/vim-lsp-ale'
 " Test
 Plug 'vim-test/vim-test'
 
+" grep the text object in the project directory
+Plug 'inside/vim-grep-operator'
+
 " AI auto complete
 " Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 " }}}

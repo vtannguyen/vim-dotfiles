@@ -201,3 +201,8 @@ nmap ;w <Plug>(easymotion-w)
 " NerdTree ---- {{{
 nnoremap <C-n> :NERDTreeToggle<CR>
 " }}}
+
+" vim-grep-operator ---- {{{
+nmap <leader>g <Plug>GrepOperatorOnCurrentDirectory
+vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory
+" }}}

@@ -24,6 +24,13 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 " }}}
 
+if executable('rust-analyzer')
+  au User lsp_setup call lsp#register_server({
+        \   'name': 'Rust Language Server',
+        \   'cmd': {server_info->['rust-analyzer']},
+        \   'whitelist': ['rust'],
+        \ })
+endif
 
 " -------------------------------
 " ----- Tabularize settings ----- {{{
@@ -177,6 +184,7 @@ autocmd FileType nerdtree setlocal relativenumber
 " count lines of files
 let g:NERDTreeFileLines = 1
 let g:NERDTreeMinimalUI = 1
+" let g:NERDTreeMinimalMenu = 1
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 let g:NERDTreeWinSize = 50
@@ -195,4 +203,11 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
+" }}}
+
+
+" ------------------------------
+" ----- vim-grep-operator setting ----- {{{
+" ------------------------------
+set grepprg=git\ grep\ -n\ $*
 " }}}
