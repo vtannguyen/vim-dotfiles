@@ -156,7 +156,7 @@ Plug 'rhysd/vim-lsp-ale'
 Plug 'vim-test/vim-test'
 
 " AI auto complete
-Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+" Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 " }}}
 
 
