@@ -117,6 +117,9 @@ Plug 'vim-scripts/ReplaceWithRegister'
 
 " Copy and paste from system clipboard
 Plug 'christoomey/vim-system-copy'
+
+" Grammar checking
+Plug 'dpelle/vim-LanguageTool'
 " }}}
 
 

@@ -212,3 +212,11 @@ set grepprg=git\ grep\ -n\ $*
 let g:system_copy#copy_command='xclip -sel clipboard'
 let g:system_copy#paste_command='xclip -sel clipboard -o'
 " }}}
+
+
+" ------------------------------
+" ----- vim-languagetool setting ----- {{{
+" ------------------------------
+let g:languagetool_jar='$HOME/.vim/code-formatters/language-tool/languagetool-commandline.jar'
+let g:languagetool_win_height=-1
+" }}}
