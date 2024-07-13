@@ -112,10 +112,10 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 
-" Copy and paste
+" Copy and paste from register
 Plug 'vim-scripts/ReplaceWithRegister'
 
-" Need to install wl-clipboard first
+" Copy and paste from system clipboard
 Plug 'christoomey/vim-system-copy'
 " }}}
 
