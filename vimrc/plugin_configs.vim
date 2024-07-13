@@ -217,6 +217,7 @@ let g:system_copy#paste_command='xclip -sel clipboard -o'
 " ------------------------------
 " ----- vim-languagetool setting ----- {{{
 " ------------------------------
-let g:languagetool_jar='$HOME/.vim/code-formatters/language-tool/languagetool-commandline.jar'
+let g:languagetool_cmd='java -jar $HOME/.vim/code-formatters/language-tool/languagetool-commandline.jar'
+let g:languagetool_lang='en-US'
 let g:languagetool_win_height=-1
 " }}}
