@@ -100,19 +100,6 @@ nnoremap <Leader>vz :call VimuxZoomRunner()<CR>
 
 " Run script with Vimux ---- {{{
 nnoremap <silent><Leader>x <Esc>:RunScript<CR>
-" This function need to be put in a proper package
-command! RunScript call s:RunScript()
-function! s:RunScript()
-  if expand("%:e") == 'sh'
-      call VimuxRunCommand("bash " . expand("%"))
-  elseif expand("%:e") == 'py'
-      call VimuxRunCommand("python " . expand("%"))
-  elseif expand("%:e") == 'js'
-      call VimuxRunCommand("node " . expand("%"))
-  else
-      echo "Script extension \"." . expand("%:e") "\" is currently not supported"
-  endif
-endfunction
 " }}}
 
 " vim-lsp ---- {{{
@@ -175,7 +162,6 @@ augroup netrw_mapping
 augroup END
 
 nnoremap <leader>e :call NetrwToggle()<CR>
-
 " }}}
 
 " vim fugitive ---- {{{
@@ -205,4 +191,8 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " vim-grep-operator ---- {{{
 nmap <leader>g <Plug>GrepOperatorOnCurrentDirectory
 vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory
+" }}}
+
+" Find files and populate the quickfix list ---- {{{
+nnoremap <c-p> :Find<space>
 " }}}

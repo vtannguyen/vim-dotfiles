@@ -7,6 +7,7 @@ syntax on
 
 source $HOME/.vim/vimrc/filetypes.vim
 source $HOME/.vim/vimrc/looks.vim
+source $HOME/.vim/vimrc/custom_functions.vim
 source $HOME/.vim/vimrc/mappings.vim
 source $HOME/.vim/vimrc/plugin_configs.vim
 source $HOME/.vim/vimrc/plugins.vim
