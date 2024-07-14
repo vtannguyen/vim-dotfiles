@@ -53,6 +53,7 @@ set winwidth=85
 set wrap
 set wrapmargin=2
 set diffopt=vertical
+set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case " use ripgrep for searching text
 
 " Easier to open large files
 augroup LargeFile

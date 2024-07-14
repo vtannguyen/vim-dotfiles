@@ -200,13 +200,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 
 " ------------------------------
-" ----- vim-grep-operator setting ----- {{{
-" ------------------------------
-set grepprg=git\ grep\ -n\ $*
-" }}}
-
-
-" ------------------------------
 " ----- vim-system-copy setting ----- {{{
 " ------------------------------
 let g:system_copy#copy_command='xclip -sel clipboard'

@@ -196,3 +196,7 @@ vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory
 " Find files and populate the quickfix list ---- {{{
 nnoremap <c-p> :Find<space>
 " }}}
+
+" Search text in directory ---- {{{
+nnoremap <c-f> :silent grep<Space>
+" }}}
