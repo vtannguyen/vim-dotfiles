@@ -75,6 +75,7 @@ let g:closetag_filenames = '*.html,*.js,*.phtml'
 " -----------------------------
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+let b:ale_enabled = 0
 " }}}
 
 
