@@ -34,6 +34,13 @@ autocmd FileType ruby noremap <Leader>m :w<CR>:!/usr/bin/env ruby -c %<CR>
 " If still want folding, install FastFold: https://github.com/Konfekt/FastFold
 autocmd FileType ruby set foldmethod=manual
 
+" Disable ale for markdown file for better performance ---------------------- {{{
+augroup DisableALEMarkdown
+  autocmd!
+  autocmd FileType markdown let b:ale_enabled = 0
+augroup END
+" }}}
+
 " Vimscript file settings ---------------------- {{{
 augroup filetype_vim
     autocmd!
