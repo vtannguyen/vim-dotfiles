@@ -28,7 +28,12 @@ nnoremap gwa :wa<CR>
 nnoremap gqa :qa<CR>
 
 " Copy the current buffer's path to the clipboard
-nmap cb :let @" = expand("%")<CR>
+"" For X11
+nnoremap fp :call system("xclip -selection clipboard", expand("%"))<CR>
+nnoremap ffp :call system("xclip -selection clipboard", expand("%:p"))<CR>
+"" For wayland
+" nnoremap fp :call system("wl-copy", expand("%"))<CR>
+" nnoremap ffp :call system("wl-copy", expand("%:p"))<CR>
 
 " Search for file using fuzzy finder
 nnoremap <leader>f :Files<CR>
